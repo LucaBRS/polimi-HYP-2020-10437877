@@ -26,6 +26,7 @@ exports.eventGET = function(type) {
  * returns Event
  **/
 exports.eventid_eventGET = function(id_event) {
-  return sqlDb('event').where('id_event',id_event);
+
+  return sqlDb('event').join('member','member.id','=','event.id_member').join('service','service.id','=','event.id_service').where('id_event',id_event);
 }
 

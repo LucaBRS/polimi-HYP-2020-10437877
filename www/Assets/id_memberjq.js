@@ -11,10 +11,14 @@ $(document).ready(function(){
 
 
 function makemember(data){
-    console.log(data);
-    for(let member of data){
-        $('#id_member').append('<li>' + member.id+ ' ' + member.first_name + ' '+ member.last_name+ '</li> '+
+    member=data[0];
+    
+        $('#id_member').append('<li>start  ' + member.id_member+ ' ' + member.first_name + ' '+ member.last_name+ '</li> '+
         '<h1>bio: ' +member.member_biography+ '</h1>'+
-        '<h1>info: '+member.email+'/'+member.member_position+'</h1>');
-    }
+        '<h1>info: '+member.email+'/'+member.member_position+'  finish</h1>');
+    
+        for (let member of data){
+            $('#id_member').append('<li>' + member.id_event+ ' ' + member.event_name + '  day:'+ member.event_day+ ' Mont'+member.event_month +'</li> '+
+        '<h1>des:: ' +member.event_description+ '</h1>');
+        }
 }

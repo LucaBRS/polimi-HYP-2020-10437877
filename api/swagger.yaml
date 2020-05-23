@@ -1,0 +1,622 @@
+---
+swagger: "2.0"
+info:
+  description: "PetsHood swegger part??"
+  version: "1.0.0"
+  title: "PetsHoods"
+  contact:
+    email: "petshoods@gmail.com"
+host: "localhost"
+basePath: "/v1"
+tags:
+- name: "member"
+  description: "Everything about Member"
+- name: "service"
+  description: "Everything about Service"
+- name: "pet"
+  description: "Everything about Pet"
+- name: "event"
+  description: "Everything about Event"
+- name: "kennel"
+  description: "Everything about kennel"
+paths:
+  /member:
+    get:
+      tags:
+      - "member"
+      summary: "basic information of Member"
+      description: "basic onformation about the association member"
+      operationId: "memberGET"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "item per page"
+        required: false
+        type: "integer"
+      - name: "offset"
+        in: "query"
+        description: "offset of the page, how it is show"
+        required: false
+        type: "integer"
+      responses:
+        "200":
+          description: "successful research"
+          schema:
+            $ref: "#/definitions/Member"
+        "400":
+          description: "invalid"
+      x-swagger-router-controller: "Member"
+  /member/{id_member}:
+    get:
+      tags:
+      - "member"
+      summary: "Find member by memId"
+      description: "Returns a single member"
+      operationId: "memberid_memberGET"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "id_member"
+        in: "path"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Member"
+        "400":
+          description: "Invalid"
+        "404":
+          description: "not found"
+      x-swagger-router-controller: "Member"
+  /service:
+    get:
+      tags:
+      - "service"
+      summary: "basic info for service"
+      description: "return all the possible information about all service"
+      operationId: "serviceGET"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "type"
+        in: "query"
+        description: "find service by type"
+        required: false
+        type: "array"
+        items:
+          type: "string"
+          default: "adoption"
+          enum:
+          - "adoption"
+          - "rescue"
+          - "medical"
+        collectionFormat: "multi"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Service"
+        "400":
+          description: "invalid"
+      x-swagger-router-controller: "Service"
+  /service/{id_service}:
+    get:
+      tags:
+      - "service"
+      summary: "specific service"
+      description: "give one specific service"
+      operationId: "serviceid_serviceGET"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "id_service"
+        in: "path"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "OK"
+          schema:
+            $ref: "#/definitions/Service"
+        "400":
+          description: "invalid"
+        "404":
+          description: "not found"
+      x-swagger-router-controller: "Service"
+  /pet:
+    get:
+      tags:
+      - "pet"
+      summary: "start of the pet"
+      description: "initial information about our pets"
+      operationId: "petGET"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "item per page"
+        required: false
+        type: "integer"
+      - name: "offset"
+        in: "query"
+        description: "oage offset"
+        required: false
+        type: "integer"
+      responses:
+        "200":
+          description: "successfull research"
+          schema:
+            $ref: "#/definitions/Pet"
+        "400":
+          description: "invalid"
+      x-swagger-router-controller: "Pet"
+  /pet/type:
+    get:
+      tags:
+      - "pet"
+      summary: "all the possible pet type"
+      description: "all the pets divided by type"
+      operationId: "pettypeGET"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "type"
+        in: "query"
+        description: "find pet by type"
+        required: false
+        type: "array"
+        items:
+          type: "string"
+          default: "dogs"
+          enum:
+          - "dogs"
+          - "cats"
+          - "old pets"
+          - "in need"
+        collectionFormat: "multi"
+      responses:
+        "200":
+          description: "successful research"
+          schema:
+            $ref: "#/definitions/Pet"
+        "400":
+          description: "invalid"
+      x-swagger-router-controller: "Pet"
+  /pet/{id_pet}:
+    get:
+      tags:
+      - "pet"
+      summary: "Find pet by ID"
+      description: "Returns a single pet"
+      operationId: "petpetid_petGET"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "id_pet"
+        in: "path"
+        description: "ID of pet to return"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Pet"
+        "400":
+          description: "Invalid ID supplied"
+        "404":
+          description: "Pet not found"
+      x-swagger-router-controller: "Pet"
+  /event:
+    get:
+      tags:
+      - "event"
+      summary: "info for all the events"
+      description: "starting page to see all the event, upcoming and non"
+      operationId: "eventGET"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "type"
+        in: "query"
+        description: "find event by type"
+        required: false
+        type: "array"
+        items:
+          type: "string"
+          default: "incoming"
+          enum:
+          - "incoming"
+          - "month"
+        collectionFormat: "multi"
+      responses:
+        "200":
+          description: "succesfull operation"
+          schema:
+            $ref: "#/definitions/Event"
+        "400":
+          description: "invalid"
+      x-swagger-router-controller: "Event"
+  /event/{id_event}:
+    get:
+      tags:
+      - "event"
+      summary: "Find event by ID"
+      description: "Returns a single event"
+      operationId: "eventid_eventGET"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "id_event"
+        in: "path"
+        description: "ID of event to return"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Event"
+        "400":
+          description: "Invalid ID supplied"
+        "404":
+          description: "Pet not found"
+      x-swagger-router-controller: "Event"
+  /kennel:
+    get:
+      tags:
+      - "kennel"
+      summary: "general info for kennel"
+      description: "give the page for the general informaton about kennel"
+      operationId: "kennelGET"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "limit"
+        in: "query"
+        description: "item per page"
+        required: false
+        type: "integer"
+      - name: "offset"
+        in: "query"
+        description: "pagination offset"
+        required: false
+        type: "integer"
+      responses:
+        "200":
+          description: "OK"
+          schema:
+            $ref: "#/definitions/Kennel"
+        "400":
+          description: "invalid"
+      x-swagger-router-controller: "Kennel"
+  /kennel/{id_kennel}:
+    get:
+      tags:
+      - "kennel"
+      summary: "specific kennel"
+      description: "give a specific kennel"
+      operationId: "kennelid_eventGET"
+      produces:
+      - "application/json"
+      - "text/html"
+      parameters:
+      - name: "id_kennel"
+        in: "path"
+        description: "Id of kernel to return"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "OK"
+          schema:
+            $ref: "#/definitions/Kennel"
+        "400":
+          description: "invalid"
+        "404":
+          description: "not found"
+      x-swagger-router-controller: "Kennel"
+definitions:
+  Member:
+    type: "object"
+    properties:
+      id_member:
+        type: "string"
+        example: "T.V.1"
+      photo:
+        type: "string"
+        format: "binary"
+      first_name:
+        type: "string"
+        example: "Luca"
+      last_name:
+        type: "string"
+        example: "Barsottini"
+      email:
+        type: "string"
+        example: "lallero@gmail.com"
+      position:
+        type: "string"
+        enum:
+        - "Vet"
+        - "Founder"
+      biography:
+        type: "string"
+        example: "bla bla bla"
+      address:
+        type: "string"
+        example: "via lallero"
+      service:
+        $ref: "#/definitions/Service"
+    title: "Member"
+    example:
+      address: "via lallero"
+      service:
+        service_name: "adoption"
+        image_1: "image_1"
+        info_3: "info_3"
+        photo: ""
+        description: "Lorem Ipsum"
+        info_1: "info_1"
+        image_3: "image_3"
+        image_2: "image_2"
+        info_2: "info_2"
+        id_service: "S_R"
+      id_member: "T.V.1"
+      photo: ""
+      last_name: "Barsottini"
+      position: "Vet"
+      biography: "bla bla bla"
+      first_name: "Luca"
+      email: "lallero@gmail.com"
+  Service:
+    type: "object"
+    properties:
+      id_service:
+        type: "string"
+        example: "S_R"
+      photo:
+        type: "string"
+        format: "binary"
+      service_name:
+        type: "string"
+        enum:
+        - "adoption"
+        - "rescue"
+        - "medical"
+      description:
+        type: "string"
+        example: "Lorem Ipsum"
+      image_1:
+        type: "string"
+      info_1:
+        type: "string"
+      image_2:
+        type: "string"
+      info_2:
+        type: "string"
+      image_3:
+        type: "string"
+      info_3:
+        type: "string"
+    title: "Service"
+    example:
+      service_name: "adoption"
+      image_1: "image_1"
+      info_3: "info_3"
+      photo: ""
+      description: "Lorem Ipsum"
+      info_1: "info_1"
+      image_3: "image_3"
+      image_2: "image_2"
+      info_2: "info_2"
+      id_service: "S_R"
+  Pet:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      photo:
+        type: "string"
+        format: "binary"
+      pet_name:
+        type: "string"
+        example: "Max"
+      biography:
+        type: "string"
+      breed:
+        type: "string"
+        enum:
+        - "cat"
+        - "dog"
+      sex:
+        type: "string"
+        example: "Male"
+      age:
+        type: "integer"
+        example: 3
+      status:
+        type: "string"
+        enum:
+        - "normal"
+        - "old pet"
+        - "pet in need"
+      kennel_id:
+        $ref: "#/definitions/Kennel"
+    title: "Pet"
+    example:
+      pet_name: "Max"
+      sex: "Male"
+      photo: ""
+      id: 0
+      biography: "biography"
+      kennel_id:
+        kerId: "K1"
+        kennel_name: "The One in Milan"
+        address: "address"
+        photo: "photo"
+        id_responsable:
+          address: "via lallero"
+          service:
+            service_name: "adoption"
+            image_1: "image_1"
+            info_3: "info_3"
+            photo: ""
+            description: "Lorem Ipsum"
+            info_1: "info_1"
+            image_3: "image_3"
+            image_2: "image_2"
+            info_2: "info_2"
+            id_service: "S_R"
+          id_member: "T.V.1"
+          photo: ""
+          last_name: "Barsottini"
+          position: "Vet"
+          biography: "bla bla bla"
+          first_name: "Luca"
+          email: "lallero@gmail.com"
+        history: "Lorem Ipsum"
+        opening: "opening"
+        reference_place: "reference_place"
+      breed: "cat"
+      age: 3
+      status: "normal"
+  Event:
+    type: "object"
+    properties:
+      id_event:
+        type: "string"
+        example: "Ev1"
+      photo:
+        type: "string"
+        format: "binary"
+      event_name:
+        type: "string"
+        example: "Welcome to our vets!"
+      event_type:
+        type: "string"
+        example: "null"
+      description:
+        type: "string"
+      event_day:
+        type: "integer"
+      event_month:
+        type: "integer"
+      event_year:
+        type: "integer"
+      event_time:
+        type: "string"
+      id_responsable:
+        $ref: "#/definitions/Member"
+      id_service:
+        $ref: "#/definitions/Service"
+    title: "Event"
+    example:
+      event_month: 6
+      event_type: "null"
+      event_day: 0
+      photo: ""
+      event_name: "Welcome to our vets!"
+      description: "description"
+      id_responsable:
+        address: "via lallero"
+        service:
+          service_name: "adoption"
+          image_1: "image_1"
+          info_3: "info_3"
+          photo: ""
+          description: "Lorem Ipsum"
+          info_1: "info_1"
+          image_3: "image_3"
+          image_2: "image_2"
+          info_2: "info_2"
+          id_service: "S_R"
+        id_member: "T.V.1"
+        photo: ""
+        last_name: "Barsottini"
+        position: "Vet"
+        biography: "bla bla bla"
+        first_name: "Luca"
+        email: "lallero@gmail.com"
+      id_event: "Ev1"
+      event_year: 1
+      event_time: "event_time"
+      id_service:
+        service_name: "adoption"
+        image_1: "image_1"
+        info_3: "info_3"
+        photo: ""
+        description: "Lorem Ipsum"
+        info_1: "info_1"
+        image_3: "image_3"
+        image_2: "image_2"
+        info_2: "info_2"
+        id_service: "S_R"
+  Kennel:
+    type: "object"
+    properties:
+      kerId:
+        type: "string"
+        example: "K1"
+      photo:
+        type: "string"
+      kennel_name:
+        type: "string"
+        example: "The One in Milan"
+      history:
+        type: "string"
+        example: "Lorem Ipsum"
+      address:
+        type: "string"
+      opening:
+        type: "string"
+      reference_place:
+        type: "string"
+      id_responsable:
+        $ref: "#/definitions/Member"
+    title: "Kernel"
+    example:
+      kerId: "K1"
+      kennel_name: "The One in Milan"
+      address: "address"
+      photo: "photo"
+      id_responsable:
+        address: "via lallero"
+        service:
+          service_name: "adoption"
+          image_1: "image_1"
+          info_3: "info_3"
+          photo: ""
+          description: "Lorem Ipsum"
+          info_1: "info_1"
+          image_3: "image_3"
+          image_2: "image_2"
+          info_2: "info_2"
+          id_service: "S_R"
+        id_member: "T.V.1"
+        photo: ""
+        last_name: "Barsottini"
+        position: "Vet"
+        biography: "bla bla bla"
+        first_name: "Luca"
+        email: "lallero@gmail.com"
+      history: "Lorem Ipsum"
+      opening: "opening"
+      reference_place: "reference_place"

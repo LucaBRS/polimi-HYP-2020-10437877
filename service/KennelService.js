@@ -24,6 +24,6 @@ exports.kennelGET = function(offset) {
  * returns Kennel
  **/
 exports.kennelid_eventGET = function(id_kennel) {
-  return sqlDb('kennel').where('id',id_kennel);
+  return sqlDb('kennel').join('member','member.id','=','kennel.id_responsable').join('pet','kennel.id','=','pet.id_kennel').where('id_kennel',id_kennel);
 }
 

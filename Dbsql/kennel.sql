@@ -1,5 +1,5 @@
 CREATE TABLE kennel (
-    id VARCHAR(10), UNIQUE(id),
+    id_k VARCHAR(10), UNIQUE(id),
     kennel_photo VARCHAR(50),
     kennel_name VARCHAR(50),
     kennel_history TEXT,

@@ -1,5 +1,5 @@
 CREATE TABLE pet (
-    id INTEGER, UNIQUE(id),
+    id_pet INTEGER, UNIQUE(id),
     petl_photo VARCHAR(59),
     pet_name VARCHAR(50),
     pet_biography TEXT,

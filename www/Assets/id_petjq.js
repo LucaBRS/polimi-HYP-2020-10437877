@@ -13,10 +13,10 @@ $(document).ready(function(){
 function makepet(data){
     console.log(data);
     for(let pet of data){
-        $('#id_pet').append('<li>' + pet.id + ' ' + pet.pet_name + '</li> '+
+        $('#id_pet').append('<li>' + pet.id_pet + ' ' + pet.pet_name + '</li> '+
         '<h1>biography: ' +pet.pet_biography+ '</h1>'+
         '<h1>info: '+pet.breed+'  / age:'+pet.age+'/   sesso '+pet.sex+'</h1>'+
         '<h1>status: '+pet.status + '</h1>'+
-        '<h1> kennel: '+ pet.id_kennel+ '</h1>');
+        '<h1> kennel: '+ pet.kennel_history+ '</h1>');
     }
 }

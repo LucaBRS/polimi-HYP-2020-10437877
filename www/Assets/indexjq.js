@@ -28,14 +28,14 @@ function makePage(data){
 function makeKennel(data){
     console.log(data);
     for(let kennel of data){
-        $('#kennel').append('<li>' + kennel.id + ' ' + kennel.kennel_name + '</li>')
+        $('#kennel').append('<li>' + kennel.id_k + ' ' + kennel.kennel_name + '</li>')
     }
 }
 
 function makePet(data){
     console.log(data);
     for(let pet of data){
-        $('#pet').append('<li>' + pet.id+ ' ' + pet.pet_name + '</li>')
+        $('#pet').append('<li>' + pet.id_pet+ ' ' + pet.pet_name + '</li>')
     }
 }
 

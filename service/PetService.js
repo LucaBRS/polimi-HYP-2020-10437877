@@ -36,6 +36,6 @@ exports.petTypeGET = function(type) {
  **/
 exports.petpetid_petGET = function(id_pet) {
   
-  return sqlDb('pet').join('kennel','pet.id_kennel','=','kennel.id').where('id_pet',id_pet);
+  return sqlDb('pet').join('kennel','pet.id_kennel','=','kennel.id_k').where('id_pet',id_pet);
 }
 

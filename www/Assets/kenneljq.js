@@ -8,6 +8,6 @@ $(document).ready(function(){
 function makekennel(data){
     console.log(data);
     for(let kennel of data){
-        $('#kennel').append('<li><a href="./Id_kennel/id_kennel.html?id_kennel=' + kennel.id+ '">'+ kennel.id + ' ' + kennel.kennel_name + '</a></li>')
+        $('#kennel').append('<li><a href="./Id_kennel/id_kennel.html?id_kennel=' + kennel.id_k+ '">'+ kennel.id_k + ' ' + kennel.kennel_name + '</a></li>')
     }
 }

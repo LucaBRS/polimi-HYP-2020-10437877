@@ -1,3 +1,5 @@
+
+
 const queryString = window.location.search;
 let urlParams = new URLSearchParams(queryString);
 let id_event = urlParams.get('id');
@@ -18,7 +20,9 @@ function makeEvent(data){
 
                 $('#id_event').append('<li>' + event.id_event + ' ' + event.event_name + '</li> '+
                  '<h1>description: ' +event.event_description+ '</h1>'+
-                 '<h1>date: '+event.event_day+'/'+event.event_month+'/'+event.event_year+'</h1>');
+                 '<h1>date: '+event.event_day+'/'+event.event_month+'/'+event.event_year+'</h1>'+
+                 '<h1>responsable' + event.id_member + '</h1>'+
+                 '<h1>service: '+ event.id_service + '</h1>');
       
     
 }

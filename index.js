@@ -7,10 +7,12 @@ var fs = require('fs'),
 var app = require('connect')();
 var swaggerTools = require('swagger-tools');
 var jsyaml = require('js-yaml');
+
 var serverPort =    process.env.PORT || 3000 ;
 
 
 let serveStatic = require('serve-static');
+
 let { settingDl } = require("./service/DataLayer");
 
 

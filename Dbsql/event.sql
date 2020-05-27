@@ -14,7 +14,7 @@ CREATE TABLE event (
 );
 
 INSERT INTO event (id_event, event_photo, event_name, event_type, event_description, event_day, event_month, event_year, event_time, event_address, id_member, id_service) VALUES ('Ev1', 'event_photo1', 'You scratch. I sniff.', 'Exhibition', 
-'^You scratch. I sniff.^ is an exhibition that was born thanks to the support given to us by the Emilia-Romagna region that together with us is involved in fighting the phenomenon of stray animals and the abandonment of pets, often consid_eventered as toys or peluches for their owners.
+'''You scratch. I sniff.'' is an exhibition that was born thanks to the support given to us by the Emilia-Romagna region that together with us is involved in fighting the phenomenon of stray animals and the abandonment of pets, often consid_eventered as toys or peluches for their owners.
 
 Cats and dogs are not stuffed animals, they can cause troubles and misunderstandings but the joy and affection that you earn exceeds all expenses.', 
  10, 1, 2021, 'h. 8.00 - 18.00', 
@@ -23,8 +23,8 @@ Str. G. Garibaldi 29, Parma',
 'P2_maam', 'S_R');
 
 INSERT INTO event (id_event, event_photo, event_name, event_type, event_description, event_day, event_month, event_year, event_time, event_address, id_member, id_service) VALUES ('Ev2', 'event_photo2', 'Discover your dogs', 'Conference', 
-'Discover the special characteristics of your pet by learning lots of new facts about your four-legged friends. A morning of pure fun where you^ll be speechless in the face of the beauty of the animal kingdom and bewildered by the thought that you don^t know your pet at all. 
-Thanks to this lecture, you will begin to appreciate your puppy and his ^quirks^ more and more.', 
+'Discover the special characteristics of your pet by learning lots of new facts about your four-legged friends. A morning of pure fun where you''ll be speechless in the face of the beauty of the animal kingdom and bewildered by the thought that you don''t know your pet at all. 
+Thanks to this lecture, you will begin to appreciate your puppy and his ''quirks'' more and more.', 
  20, 2,2021 , 'h. 8.00 - 9.00', 
 'Teatro delle Passioni
 Viale C. Sigonio 382, Modena', 

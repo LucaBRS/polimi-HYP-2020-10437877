@@ -34,10 +34,10 @@ The adoption procedure starts online through our contact form and ends after a v
 
 /*PROBLEMA COOOOOONNN  ' */
 INSERT INTO service(id, photo, service_name, service_description, image_1, info_1 , image_2, info_2, image_3, info_3, other_info) VALUES ('S_P', '+', 'Post Adoption' , 
-'If you adopt a pet from our kennels you will be able to talk to our expert veterinarians about your pet^ s problems and book free specialized visits with your favourite vet. We know your pet from the beginning and we will be able to find your ideal therapy. 
+'If you adopt a pet from our kennels you will be able to talk to our expert veterinarians about your pet'' s problems and book free specialized visits with your favourite vet. We know your pet from the beginning and we will be able to find your ideal therapy. 
 
-If the problem is of a more serious nature, however, you can take advantage of discounts in some partner veterinary clinics, namely the clinics ^Pethospital^ in Baggiovara and ^Ciuffodi pelo^ in Vignola.', 
-'+', 'Free medical checkup. Speak with our experts about your pet^ s health', 
+If the problem is of a more serious nature, however, you can take advantage of discounts in some partner veterinary clinics, namely the clinics ''Pethospital'' in Baggiovara and ''Ciuffodi pelo'' in Vignola.', 
+'+', 'Free medical checkup. Speak with our experts about your pet'' s health', 
 '+', 'Specialised visits. We can find the perfect therapy for you pet', 
 '+', 'Partner clinics. In our partner clinics you can have discounts',
 'We help fight the abandonment of dogs and cats, sensibilizing people about the topic and rescuing pets from the street.');

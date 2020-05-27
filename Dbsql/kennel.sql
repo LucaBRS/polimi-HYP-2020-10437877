@@ -27,7 +27,7 @@ Saturday and Sunday: closed',
 'Guastalla, Novellara, Reggiolo, Castellarano, Correggio, Rio Saliceto, Rolo and Toano', 
 'P3_elsa');
 
-INSERT INTO kennel (id_k, kennel_photo, kennel_name, kennel_history, kennel_address, kennel_opening, reference_place, id_responsable) VALUES ('K_P', 'kennel_photok3', 'Kennel of Parma', 'The kennel of Parma is characterized by the construction of an outpatient examination room, a surgery room and two well-equipped and well-stocked hospitalization and recovery rooms within the Polo^s structure. This allows the Polo^s medical staff to guarantee both ordinary management and some specialist and first aid interventions on site, minimizing public spending and maximizing the efficiency of the intervention.
+INSERT INTO kennel (id_k, kennel_photo, kennel_name, kennel_history, kennel_address, kennel_opening, reference_place, id_responsable) VALUES ('K_P', 'kennel_photok3', 'Kennel of Parma', 'The kennel of Parma is characterized by the construction of an outpatient examination room, a surgery room and two well-equipped and well-stocked hospitalization and recovery rooms within the Polo''s structure. This allows the Polo''s medical staff to guarantee both ordinary management and some specialist and first aid interventions on site, minimizing public spending and maximizing the efficiency of the intervention.
 
 The health management is also authorized to take advantage of external specialist interventions both through municipal allocations and by agreement between the Emilia Romagna Region and the University of Parma and Bologna.With similar procedures, access to emergency care is guaranteed 24 hours a day.', 
 'Via Buffolara 52, Parma', 

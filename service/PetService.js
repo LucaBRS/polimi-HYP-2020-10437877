@@ -23,7 +23,7 @@ exports.petGET = function(limit,offset) {
  THIS FUNCTION WILL NOT BE USED
  **/
 exports.petTypeGET = function(type) {
- console.log('pet type not done');
+ console.log('NOT IMPLEMENTED');
 }
 
 

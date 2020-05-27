@@ -54,7 +54,7 @@ paths:
       tags:
       - "member"
       summary: "Find member by memId"
-      description: "Returns a single member"
+      description: "Returns a single member with all the event associated and servie (is a joint table with : event, service, member)"
       operationId: "memberid_memberGET"
       produces:
       - "application/json"
@@ -108,7 +108,7 @@ paths:
       tags:
       - "service"
       summary: "specific service"
-      description: "give one specific service"
+      description: "give one specific service and all event associated (is a joint table with : event, service, member)"
       operationId: "serviceid_serviceGET"
       produces:
       - "application/json"
@@ -161,8 +161,8 @@ paths:
     get:
       tags:
       - "pet"
-      summary: "all the possible pet type"
-      description: "all the pets divided by type"
+      summary: "NOT IMPLEMENTED"
+      description: "NOT IMPLEMENTED "
       operationId: "pettypeGET"
       produces:
       - "application/json"
@@ -193,7 +193,7 @@ paths:
       tags:
       - "pet"
       summary: "Find pet by ID"
-      description: "Returns a single pet"
+      description: "Returns a single pet and the kennel where is (join table with kennel and pet)"
       operationId: "petpetid_petGET"
       produces:
       - "application/json"
@@ -249,7 +249,7 @@ paths:
       tags:
       - "event"
       summary: "Find event by ID"
-      description: "Returns a single event"
+      description: "Returns a single event (is a joint table with : event, service, member)"
       operationId: "eventid_eventGET"
       produces:
       - "application/json"
@@ -304,7 +304,7 @@ paths:
       tags:
       - "kennel"
       summary: "specific kennel"
-      description: "give a specific kennel"
+      description: "give a specific kennel and give out all the pet inside (is a join of table in the database)"
       operationId: "kennelid_eventGET"
       produces:
       - "application/json"

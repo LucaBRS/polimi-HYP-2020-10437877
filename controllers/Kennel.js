@@ -4,8 +4,9 @@ var utils = require('../utils/writer.js');
 var Kennel = require('../service/KennelService');
 
 module.exports.kennelGET = function kennelGET (req, res, next) {
+  var limit = req.swagger.params['limit'].value;
   var offset = req.swagger.params['offset'].value;
-  Kennel.kennelGET(offset)
+  Kennel.kennelGET(limit,offset)
     .then(function (response) {
       utils.writeJson(res, response);
     })

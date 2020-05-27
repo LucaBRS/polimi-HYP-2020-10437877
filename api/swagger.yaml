@@ -6,7 +6,7 @@ info:
   title: "PetsHoods"
   contact:
     email: "petshoods@gmail.com"
-host: "localhost"
+host: "localhost:3000"
 basePath: "/v1"
 tags:
 - name: "member"
@@ -85,19 +85,16 @@ paths:
       - "application/json"
       - "text/html"
       parameters:
-      - name: "type"
+      - name: "limit"
         in: "query"
-        description: "find service by type"
+        description: "item per page"
         required: false
-        type: "array"
-        items:
-          type: "string"
-          default: "adoption"
-          enum:
-          - "adoption"
-          - "rescue"
-          - "medical"
-        collectionFormat: "multi"
+        type: "integer"
+      - name: "offset"
+        in: "query"
+        description: "oage offset"
+        required: false
+        type: "integer"
       responses:
         "200":
           description: "successful operation"
@@ -182,8 +179,6 @@ paths:
           enum:
           - "dogs"
           - "cats"
-          - "old pets"
-          - "in need"
         collectionFormat: "multi"
       responses:
         "200":
@@ -231,18 +226,16 @@ paths:
       - "application/json"
       - "text/html"
       parameters:
-      - name: "type"
+      - name: "limit"
         in: "query"
-        description: "find event by type"
+        description: "item per page"
         required: false
-        type: "array"
-        items:
-          type: "string"
-          default: "incoming"
-          enum:
-          - "incoming"
-          - "month"
-        collectionFormat: "multi"
+        type: "integer"
+      - name: "offset"
+        in: "query"
+        description: "oage offset"
+        required: false
+        type: "integer"
       responses:
         "200":
           description: "succesfull operation"

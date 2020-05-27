@@ -10,7 +10,7 @@ exports.kennelDb = function(s){
  * offset Integer pagination offset (optional)
  * returns Kennel
  **/
-exports.kennelGET = function(offset) {
+exports.kennelGET = function(limit,offset)  {
   
  return sqlDb("kennel");
 }

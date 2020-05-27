@@ -13,7 +13,7 @@ exports.petDb = function(s){
  * offset Integer oage offset (optional)
  * returns Pet
  **/
-exports.petGET = function(offset) {
+exports.petGET = function(limit,offset) {
   return  sqlDb("pet").offset(offset);  
 }
 

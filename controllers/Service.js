@@ -4,8 +4,9 @@ var utils = require('../utils/writer.js');
 var Service = require('../service/ServiceService');
 
 module.exports.serviceGET = function serviceGET (req, res, next) {
-  var type = req.swagger.params['type'].value;
-  Service.serviceGET(type)
+  var limit = req.swagger.params['limit'].value;
+  var offset = req.swagger.params['offset'].value;
+  Service.serviceGET(limit,offset)
     .then(function (response) {
       utils.writeJson(res, response);
     })

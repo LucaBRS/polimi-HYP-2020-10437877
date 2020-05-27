@@ -12,7 +12,7 @@ exports.eventDb = function(s){
  * type List find event by type (optional)
  * returns Event
  **/
-exports.eventGET = function(type) {
+exports.eventGET = function(limit,offset) {
   
  return sqlDb("event");
 }

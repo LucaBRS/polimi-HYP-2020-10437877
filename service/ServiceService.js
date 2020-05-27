@@ -28,7 +28,7 @@ exports.serviceDb = function(s){
  * type List find service by type (optional)
  * returns Service
  **/
-exports.serviceGET = function(type) {
+exports.serviceGET = function(limit,offset) {
   return sqlDb('service');
 }
 

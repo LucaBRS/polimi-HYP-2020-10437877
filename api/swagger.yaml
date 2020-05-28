@@ -6,7 +6,7 @@ info:
   title: "PetsHoods"
   contact:
     email: "petshoods@gmail.com"
-host: "https://www.hyp-project-2020-try.herokuapp.com"
+host: "hyp-project-2020-try.herokuapp.com"
 basePath: "/v1"
 tags:
 - name: "member"

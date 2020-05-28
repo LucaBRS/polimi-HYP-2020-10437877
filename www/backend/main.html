@@ -13,28 +13,34 @@
 
 
 
-
 ## Links to other deliverables
-- Deliverable D0: the web application is accessible at <a href="https://hyp-project-2020-try.herokuapp.com">[this address]</a>.
-- Deliverable D2: the YAML or JSON file containing the specificationof the app API can be found at [this address](https://example.com/backend/spec.yaml).
-- Deliverable D3: the SwaggerUI page of the same API is available at [this address](https://example.com/backend/swaggerui).
-- Deliverable D4: the source code of D0 is available as a zip file at [this address](https://example.com/backend/app.zip).
-- Deliverable D5: the address of the online source control repository is available [this address](https://examplegit.com). We hereby declare that this is a private repository and, upon request, we will give access to the instructors.
+- Deliverable D0: the web application is accessible at <a href="https://polimi-hyp-2020-team-10437877.herokuapp.com">[this address]</a>.
+- Deliverable D2: the YAML or JSON file containing the specificationof the app API can be found at <a href="https://polimi-hyp-2020-team-10437877.herokuapp.com/backend/spec.yaml">[this address]</a>.
+- Deliverable D3: the SwaggerUI page of the same API is available at <a href="https://polimi-hyp-2020-team-10437877.herokuapp.com/docs">[this address]</a>.
+- Deliverable D4: the source code of D0 is available as a zip file at<a href="https://polimi-hyp-2020-team-10437877.herokuapp.com/backend/app.zip">[this address]</a>.
+- Deliverable D5: the address of the online source control repository is available [this address](https://examplegit.com). 
+    We hereby declare that this is a private repository and, upon request, we will give access to the instructors.
 
 ## Specification
 
 ### Web Architecture
-Describe here, with a diagram, the components of your web application
-and how they interact. Highlight which parts belong to the application
-layer, data layer or presentation layer. How did you ensure that HTML is
-not rendered server side?
+Passing static page from the server to the browser we ensure them to be rendered by the same browser. Our application is composed by a database (postgres), 
+a server (in Node.js) and a folder containing the static page.
+In other to make them work together and communicate with the right path we use OpenAPI and swagger. 
+From the swagger editor we download the server part. 
+It was created without the DataLayer, that we add it later using Knex and setting the path to the database of Heroku, we make it pass the database to each of the 
+service we needed to be in the database in these case Member(people), Event, Service, Kennel, Pet.
+ [DIAGRAM]
 
 ### API
 
 #### REST compliance
-Describe here to what extent did you follow REST principles and what are
-the reasons for which you might have decided to diverge. Note, you must
-not describe the whole API here, just the design decisions.
+We try to follow as mush as possible the REST paradigm, for the naming convention we did more the one time all the code to respect as much as possible an order.
+We did have a client-server communication with only the essential get with exception of member because some limitation with knex. 
+The client have the access only the information inside the database. Every time you click in a page a new request is made there is no data storage in the client part. 
+The server create the connection to the database and manage the path request with OpenAPI.
+For our site we needed only the GET operation.
+
 #### OpenAPI Resource models
 Describe here synthetically, which models you have introduced for
 resources.
@@ -43,8 +49,10 @@ Describe with an ER diagram the model used in the data layer of your web
 application. How these map to the OpenAPI data model?
 ## Implementation
 ### Tools used
-Describe here which tools, languages and frameworks did you use for the
-backend of the application.
+Firstly we use Swagger on the site <a href= 'https://editor.swagger.io'>https://editor.swagger.io</a> and we create a json file with all the path 
+we downloaded with the provided server creator form the site. The module connect in order to establish connection, serve-static to serve the html, 
+knex for the connection to the database and handle the request to it, postgres as database, git and finally Heroku
+
 ### Discussion
 Describe here:
 - How did you make sure your web application adheres to the provided
@@ -53,41 +61,37 @@ endpoints against the expected response?
 - Why do you think your web application adheres to common practices to
 partition a REST-based web application (static assets vs.
 application data)
-- Describe synthetically why and how did you manage session state,
-what are the state change triggering actions (e.g., POST to login
-etc..).
-- Which technology did you use (relational or a no-SQL database) for
-managing the data model?
-## Other information
-### Task assignment
-Describe here how development tasks have been subdivided among members
-of the group, e.g.:
-> - Foo worked on front end (80%) and OpenAPI Spec (20% of the time)
-> - Bar worked on ....
-### Analysis of existing API
-Describe here the research of (full or part of) existing APIs that are similar
-in objectives and scope to the one implemented, that have possibly guided
-implementation choices (these should not be necessarily OpenAPI
-implementations). Toy APIs (such as the Swagger's Pet Store) or the example
-shown during lectures are not a valid response.
-Use TWO or more items of the form:
-> We took (full/partial) inspiration from API <XYZ>(link) for the part of the
-> API that manages <ABC> because of <REASON>.
-Or
-> For the part of the API that manages <ABC> we considered/studied <XYZ>(link)
-> because of <REASON> but wasn't completely fitting to our purpose because of
-> <REASON>.
-### Learning outcome
-What was the most important thing all the members have learned while
-developing this part of the project, what questions remained unanswered,
-how you will use what you've learned in your everyday life?
-Examples:
-- Foo learned to write SQL queries and Javascript but wanted to know
-more about caching, he's probably going to create his own startup
-with what she has learned
-- Bar learned how to deploy on a cloud platform, he would have liked
-to know more about promises for asynchronous code..
+- We basically have just GET
+- we use relation between tables with the FK and in order to send data we did a join between the linked tables
 
+## Other information
+
+### Task assignment
+-Erbol work on front end (90%) 
+-Lucia work on front end (90%)
+-Luca work on back end (90%)
+Step by step the implementation of each part as been explained and shared among group member in other to understand and possibly interchange task in other to complete the project and help the part that is been implemented slowly.
+
+### Analysis of existing API
+We start from doing the free courses from <a href = 'https://www.codecademy.com'>https://www.codecademy.com</a> where we learn by doing how to use html/css/js 
+obviously with the support of <a href ='https://www.html.it'>https://www.html.it</a>.
+In order to understand API we took full information from <a href='https://www.youtube.com/watch?v=GZvSYJDk-us'>https://www.youtube.com/watch?v=GZvSYJDk-us</a> 
+from here we go to <a href = 'https://www.freecodecamp.org/learn'>https://www.freecodecamp.org/learn</a>
+where step by step is explained what an API is and how to implement one, there are also some explanation on how to do the back end part and the front end of a site. 
+The main learning for using Swagger was from the example Pet of the editor swagger and the documentation inside. 
+In order to understand how to use and what is node js we did <a href ='https://www.youtube.com/watch?v=w-7RQ46RgxU&list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp'>https://www.youtube.com/watch?v=w-7RQ46RgxU&list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp</a> where he explain step by step the fundamental passage to create a small app, 
+unfortunately using express so our learning had to go back to the module connect difficult to understand due to the lack of site that explain it we found some video 
+that give us some idea but the main research was done in <a href='https://nodejs.org/it'>https://nodejs.org/it/</a>. For creating a database we had to do a full tutorial 
+from <a href = 'https://www.youtube.com/watch?v=qw--VYLpxG4'>https://www.youtube.com/watch?v=qw--VYLpxG4</a> this video base all our creation for the database and help us to understand 
+clearly the join between table used to pass the information in json, these information has been used in the implementation of the back end. 
+Needles to say that to solve our problem we constantly used <a href = 'https://stackoverflow.com'>https://stackoverflow.com</a> and <a href = 'https://github.com'>https://github.com</a>
+
+### Learning outcome
+Basically all the member learned everything. 
+None of us done something related to the topic that has been discussed int these exam. 
+Erbol done some Cyber Security study, Luca and Erbol had some small experience in Html because of the exam: Computer Graphics that explain the effect 
+that can be applied to some created figure in html but not how to create a page html.
 </pre>
 </body>
 </html>
+

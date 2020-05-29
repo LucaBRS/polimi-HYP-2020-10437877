@@ -10,6 +10,6 @@ $(document).ready(function(){
 function makeEvent(data){
     console.log(data);
     for(let event of data){
-        $('#event').append('<li><a href="./Id_event/id_event.html?id=' + event.id_event + '">'+ event.id_event + ' ' + event.event_name + '</a></li>')
+        $('#event').append('<li><a href="./id_event.html?id=' + event.id_event + '">'+ event.id_event + ' ' + event.event_name + '</a></li>')
     }
 }

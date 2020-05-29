@@ -14,6 +14,7 @@ function makekennel(data){
     console.log(data);
     let kennel = data [0];
     $('#id_kennel').append('<li>' + kennel.id + ' ' + kennel.kennel_name + '</li> '+
+        '<img src= '+'../../img/img1.jpg'+'></img>'+
         '<h1>history: ' +kennel.kennel_history+ '</h1>'+
         '<h1>address: '+kennel.kennel_address+'</h1>'+
         '<h1>responsable: '+kennel.id_responsable + '</h1>'+

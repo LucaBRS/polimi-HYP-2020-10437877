@@ -12,57 +12,76 @@
 | 3         | member        | Lucia      | Gualdi        |10545789   |lucia.gualdi@mail.polimi.it   |
 
 
-
 ## Links to other deliverables
 - Deliverable D0: the web application is accessible at <a href="https://polimi-hyp-2020-team-10437877.herokuapp.com">[this address]</a>.
 - Deliverable D2: the YAML or JSON file containing the specificationof the app API can be found at <a href="https://polimi-hyp-2020-team-10437877.herokuapp.com/backend/spec.yaml">[this address]</a>.
 - Deliverable D3: the SwaggerUI page of the same API is available at <a href="https://polimi-hyp-2020-team-10437877.herokuapp.com/docs">[this address]</a>.
 - Deliverable D4: the source code of D0 is available as a zip file at<a href="https://polimi-hyp-2020-team-10437877.herokuapp.com/backend/app.zip">[this address]</a>.
-- Deliverable D5: the address of the online source control repository is available [this address](https://examplegit.com). 
-    We hereby declare that this is a private repository and, upon request, we will give access to the instructors.
+- Deliverable D5: the address of the online source control repository is available <a href="https://github.com/LucaBRS/PetsHood/settings/access">[this address]</a>. 
+    We hereby declare that this is a private repository, and, upon request, we will give access to the instructors.
 
 ## Specification
 
 ### Web Architecture
-Passing static page from the server to the browser we ensure them to be rendered by the same browser. Our application is composed by a database (postgres), 
+Passing static page from the server to the browser we ensure them to be rendered by the same browser. 
+Our application is composed by a database (postgres), 
 a server (in Node.js) and a folder containing the static page.
-In other to make them work together and communicate with the right path we use OpenAPI and swagger. 
-From the swagger editor we download the server part. 
-It was created without the DataLayer, that we add it later using Knex and setting the path to the database of Heroku, we make it pass the database to each of the 
-service we needed to be in the database in these case Member(people), Event, Service, Kennel, Pet.
- [DIAGRAM]
+A perfect representation is the one showed during lessons:
+<img src="./concept.jpg" width=600 height=auto>
+The database is the Data-layer, while the application server is the Application-layer. The database (postgres) is managed in Heroku, 
+in the other hand the application server as been generated from Swagger and then finished by us. 
+We find a perfect representation online where is shown the level and the connection:
+<img src="./layer.jpg"  width=400 height=auto >
 
 ### API
 
 #### REST compliance
-We try to follow as mush as possible the REST paradigm, for the naming convention we did more the one time all the code to respect as much as possible an order.
-We did have a client-server communication with only the essential get with exception of member because some limitation with knex. 
-The client have the access only the information inside the database. Every time you click in a page a new request is made there is no data storage in the client part. 
-The server create the connection to the database and manage the path request with OpenAPI.
-For our site we needed only the GET operation.
+We try to follow as mush as possible the REST paradigm:
+- Client-Server: the client application and server application can evolve separately, 
+    and we did try to remove any dependencies.
+- Layered System: the system is layered, the postgres server is situated in another place in respect to server. 
+    Session information are stored in the server. 
+- Code on demand: This part is trick and not so mush relevant for us because we basically send just resources in JSON format.  
+- Stateless: we did achieve this point. We have just GET to the server and we did not need to manage any user login.   
+- Uniform Interface: one of the most important one and the one that we try to follow as much as possible. 
+    Our interface is resource base, we do have resources with relative URIs, we do have resource representation with naming 
+    convention and the format for the GET attribute is all in JSON, the messages are self-descriptive.
 
 #### OpenAPI Resource models
 Describe here synthetically, which models you have introduced for
 resources.
+
 ### Data model
-Describe with an ER diagram the model used in the data layer of your web
-application. How these map to the OpenAPI data model?
+Here is the ERD diagram:
+<img src="./ERD.jpg" width=600 height=auto>
+Is possible to observe a better version in the project repository (projectName/Dbsql/ERD.vuerd.json)
+
 ## Implementation
+
 ### Tools used
-Firstly we use Swagger on the site <a href= 'https://editor.swagger.io'>https://editor.swagger.io</a> and we create a json file with all the path 
-we downloaded with the provided server creator form the site. The module connect in order to establish connection, serve-static to serve the html, 
-knex for the connection to the database and handle the request to it, postgres as database, git and finally Heroku
+To develop the back-end application, we used:
+- nodejs, connect, swagger, knex, serve-static, pg, Heroku
+- postgreSQL to manage the database(postgres)
+- Swagger (OpenAPI) to generate and manage the server and the specification
 
 ### Discussion
-Describe here:
-- How did you make sure your web application adheres to the provided
-OpenAPI specification? Which method did you use to test all APIs
-endpoints against the expected response?
-- Why do you think your web application adheres to common practices to
-partition a REST-based web application (static assets vs.
-application data)
-- We basically have just GET
-- we use relation between tables with the FK and in order to send data we did a join between the linked tables
+-How did you make sure your web application adheres to the provided OpenAPI specification?-
+So, about our project we started from the OpenAPI specification to build the project, 
+during the development we continuously manipulated to keep it updated with the sate of the project. 
+All API operation are used on the front-end side.
+
+-Why do you think your web application adheres to common practices to
+partition a REST-based web application (static assets vs.application data)-
+We do effectively separate the static resources, as html, css, js putting them on the server side. 
+Our data is stored in a separate space and used with specific call. 
+We try to find some equilibrium between static and balance and we find that our solution was best suited for our website.
+
+-Describe synthetically why and how did you manage session state, what are the state change triggering 
+actions (e.g., POST to login etc..).-
+We do not have a lot of state change because we have no POST or login part, so our website is composed basically with GET.
+
+-Which technology did you use (relational or a no-SQL database) for managing the data model?-
+We use PostgresSQL and it was the best way to manage data model in our opinion.
 
 ## Other information
 
@@ -70,28 +89,36 @@ application data)
 -Erbol work on front end (90%) 
 -Lucia work on front end (90%)
 -Luca work on back end (90%)
-Step by step the implementation of each part as been explained and shared among group member in other to understand and possibly interchange task in other to complete the project and help the part that is been implemented slowly.
+Step by step, the implementation of each part as been explained and shared among group member in other to understand and possibly 
+interchange task in other to complete the project and help the part that is been implemented slowly.
 
 ### Analysis of existing API
-We start from doing the free courses from <a href = 'https://www.codecademy.com'>https://www.codecademy.com</a> where we learn by doing how to use html/css/js 
-obviously with the support of <a href ='https://www.html.it'>https://www.html.it</a>.
-In order to understand API we took full information from <a href='https://www.youtube.com/watch?v=GZvSYJDk-us'>https://www.youtube.com/watch?v=GZvSYJDk-us</a> 
+To understand REST paradigm from the curs lesson and from <a href=https://restfulapi.net >https://restfulapi.net </a>.
+We start from doing the free courses from <a href = 'https://www.codecademy.com'>https://www.codecademy.com</a> where we learn 
+by doing how to use html/css/js obviously with the support of <a href ='https://www.html.it'>https://www.html.it</a>.
+In order to understand API, we took full information from <a href='https://www.youtube.com/watch?v=GZvSYJDk-us'>https://www.youtube.com/watch</a> 
 from here we go to <a href = 'https://www.freecodecamp.org/learn'>https://www.freecodecamp.org/learn</a>
-where step by step is explained what an API is and how to implement one, there are also some explanation on how to do the back end part and the front end of a site. 
+where step by step is explained what an API is and how to implement one, there are also some explanation 
+on how to do the back-end part and the front end of a site. 
 The main learning for using Swagger was from the example Pet of the editor swagger and the documentation inside. 
-In order to understand how to use and what is node js we did <a href ='https://www.youtube.com/watch?v=w-7RQ46RgxU&list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp'>https://www.youtube.com/watch?v=w-7RQ46RgxU&list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp</a> where he explain step by step the fundamental passage to create a small app, 
-unfortunately using express so our learning had to go back to the module connect difficult to understand due to the lack of site that explain it we found some video 
-that give us some idea but the main research was done in <a href='https://nodejs.org/it'>https://nodejs.org/it/</a>. For creating a database we had to do a full tutorial 
-from <a href = 'https://www.youtube.com/watch?v=qw--VYLpxG4'>https://www.youtube.com/watch?v=qw--VYLpxG4</a> this video base all our creation for the database and help us to understand 
-clearly the join between table used to pass the information in json, these information has been used in the implementation of the back end. 
-Needles to say that to solve our problem we constantly used <a href = 'https://stackoverflow.com'>https://stackoverflow.com</a> and <a href = 'https://github.com'>https://github.com</a>
+In order to understand how to use and what is node js we did <a href ='https://www.youtube.com/watch?v=w-7RQ46RgxU&list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp'>https://www.youtube.com/watch</a>
+where he explains step by step the fundamental passage to create a small app, 
+unfortunately using express so our learning had to go back to the module connect difficult to understand due to the lack 
+of site that explain it we found some video that give us some idea, but the main research was done in <a href='https://nodejs.org/it'>https://nodejs.org/it/</a>. 
+For creating a database, we had to do a full tutorial from <a href = 'https://www.youtube.com/watch?v=qw--VYLpxG4'>https://www.youtube.com/watch</a> this 
+video base all our creation for the database and help us to understand 
+clearly the join between table used to pass the information in json, this information has been used in the implementation of the back end. 
+Needles to say that to solve our problem we constantly used <a href = 'https://stackoverflow.com'>https://stackoverflow.com</a> and <a href = 'https://github.com'>https://github.com</a>.
+
 
 ### Learning outcome
-Basically all the member learned everything. 
-None of us done something related to the topic that has been discussed int these exam. 
-Erbol done some Cyber Security study, Luca and Erbol had some small experience in Html because of the exam: Computer Graphics that explain the effect 
+Basically, all the member learned everything. 
+None of us done something related to the topic that has been discussed int these exams. 
+Erbol done some Cyber Security study, Luca and Erbol had some small experience in Html because of the exam: 
+Computer Graphics that explain the effect 
 that can be applied to some created figure in html but not how to create a page html.
 </pre>
 </body>
 </html>
+
 

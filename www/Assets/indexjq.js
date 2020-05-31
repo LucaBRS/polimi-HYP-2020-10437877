@@ -21,7 +21,7 @@ function makeEvent(data){
 function makePage(data){
     console.log(data);
     for(let member of data){
-          $('#member').append('<li>' + member.id+ '/ ' + member.first_name +'  '+member.last_name + '</li>')
+          $('#member').append('<li>' + member.id_m+ '/ ' + member.first_name +'  '+member.last_name + '</li>')
     } 
  }
 
@@ -42,6 +42,6 @@ function makePet(data){
 function makeService(data){
     console.log(data);
     for(let service of data){
-        $('#service').append('<li>' + service.id + ' ' + service.service_name + '</li>')
+        $('#service').append('<li>' + service.id_m + ' ' + service.service_name + '</li>')
     }
 }

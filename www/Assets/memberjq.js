@@ -10,6 +10,6 @@ $(document).ready(function(){
 function makemember(data){
     console.log(data);
     for(let member of data){
-        $('#member').append('<li><a href="./id_member.html?id_member=' + member.id + '">'+ member.id + ' ' + member.first_name +' '+ member.last_name+'</a></li>')
+        $('#member').append('<li><a href="./id_member.html?id_member=' + member.id_m + '">'+ member.id_m + ' ' + member.first_name +' '+ member.last_name+'</a></li>')
     }
 }

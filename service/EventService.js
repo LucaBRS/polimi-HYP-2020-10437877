@@ -27,6 +27,6 @@ exports.eventGET = function(limit,offset) {
  **/
 exports.eventid_eventGET = function(id_event) {
 
-  return sqlDb('event').join('member','member.id','=','event.id_member').join('service','service.id','=','event.id_service').where('id_event',id_event);
+  return sqlDb('event').join('member','member.id_m','=','event.id_member').join('service','service.id_s','=','event.id_service').where('id_event',id_event);
 }
 

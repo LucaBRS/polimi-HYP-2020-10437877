@@ -29,6 +29,6 @@ exports.memberGET = function(limit,offset) {
  **/
 exports.memberid_memberGET = function(id_member) {
   let helper;
-  return  sqlDb('member').join('event','member.id','=','event.id_member').join('service','service.id','=','event.id_service').where('id_member',id_member);
+  return  sqlDb('member').join('event','member.id_m','=','event.id_member').join('service','service.id_s','=','event.id_service').where('id_member',id_member);
 }
 

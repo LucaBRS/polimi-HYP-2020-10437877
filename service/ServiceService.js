@@ -41,6 +41,6 @@ exports.serviceGET = function(limit,offset) {
  * returns Service
  **/
 exports.serviceid_serviceGET = function(id_service) {
-  return sqlDb('event').join('member','member.id','=','event.id_member').join('service','service.id','=','event.id_service').where('id_service',id_service);
+  return sqlDb('event').join('member','member.id_m','=','event.id_member').join('service','service.id_s','=','event.id_service').where('id_service',id_service);
 }
 

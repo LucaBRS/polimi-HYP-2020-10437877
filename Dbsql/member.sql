@@ -7,7 +7,7 @@ CREATE TABLE member (
     member_position VARCHAR(50),
     member_biography TEXT,
     member_address VARCHAR(50),
-    member_service VARCHAR(5) REFERENCES service(id)
+    member_service VARCHAR(5) REFERENCES service(id_s)
  );
 
 

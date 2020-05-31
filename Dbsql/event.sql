@@ -9,8 +9,8 @@ CREATE TABLE event (
     event_year integer,
     event_time VARCHAR(50),
     event_address VARCHAR(200),
-    id_member VArCHAR(10) REFERENCES member(id),
-    id_service VARCHAR(10) REFERENCES service(id)
+    id_member VArCHAR(10) REFERENCES member(id_m),
+    id_service VARCHAR(10) REFERENCES service(id_s)
 );
 
 INSERT INTO event (id_event, event_photo, event_name, event_type, event_description, event_day, event_month, event_year, event_time, event_address, id_member, id_service) VALUES ('Ev1', '../img/EVENT1.jpg', 'You scratch. I sniff.', 'Exhibition', 

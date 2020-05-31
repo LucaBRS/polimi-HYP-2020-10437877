@@ -9,12 +9,12 @@ const knex = require("knex");
  let sqlDb = knex({
  debug: true,
  client: "pg",
- connection:  process.env.DATABASE_URL,
+ connection:  'postgresql://postgres:lol1@localhost:5432/projectdb',
  ssl: true
  });
 
 //   'postgresql://postgres:lol1@localhost:5432/projectdb'
-
+// polimi-hyp-2020-team-10437877.herokuapp.com
 // process.env.DATABASE_URL
 
 function settingDl() {

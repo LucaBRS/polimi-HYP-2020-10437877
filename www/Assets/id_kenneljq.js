@@ -23,6 +23,7 @@ function makekennel(data){
         $('#id_kennel').append('<li><h1>' + kennel.id_pet + ' ' + kennel.pet_name + '</h2> </li>'+
         '<h1>age: ' +kennel.age+ '</h1>'+
         '<h1>breed: '+kennel.breed+'</h1>'+
-        '<h1>sex: '+kennel.sex + '</h1>');
+        '<h1>sex: '+kennel.sex + '</h1>'+
+        '<h1>responsable: '+kennel.id_responsable + '</h1>');
     }
 }

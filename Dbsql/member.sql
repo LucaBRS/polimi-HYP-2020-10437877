@@ -1,5 +1,5 @@
 CREATE TABLE member (
-    id_m VARCHAR(10), UNIQUE(id),
+    id_m VARCHAR(10), UNIQUE(id_m),
     member_photo VARCHAR(50),
     first_name VARCHAR(50),
     last_name VARCHAR(50),

@@ -1,5 +1,5 @@
 CREATE TABLE service (
-    id_s VARCHAR(5) ,UNIQUE (id),
+    id_s VARCHAR(5) ,UNIQUE (id_s),
     service_photo VARCHAR(100),
     service_name VARCHAR(50),
     service_description TEXT,

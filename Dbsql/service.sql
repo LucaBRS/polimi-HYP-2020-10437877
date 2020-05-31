@@ -20,7 +20,7 @@ If you find a cat: free cats can be part of a local feline colony, so we only we
 '+', 'Emergency calls. With just a simple call you can save a pet',
 '+', 'Immediate rescue. In maximum 20 minutes our volunteers will come', 
 '+', 'Immediate adoption procedure. If you save a pet you can immediately adopt him',
-'We help fight the abandonment of dogs and cats, sensibilizing people about the topic and rescuing pets from the street.');
+'We help fight the abandonment of dogs and cats, sensibilizing people about the topic and rescuing pets from the street.', '../img/S_R1.jpg', 'Emergency calls. With just a simple call you can save a pet', '../img/S_R2.jpg', 'Immediate rescue. In maximum 20 minutes our volunteers will come', '../img/S_R3.jpg', 'Immediate adoption procedure. If you save a pet you can immediately adopt him');
 
 INSERT INTO service(id, service_photo, service_name, service_description, image_1, info_1 , image_2, info_2, image_3, info_3, other_info) VALUES ('S_A', '../img/service ADOPTION.jpg', 'Adoption' , 
 'Petshood is the first site to offer the possibility to adopt your pet online, choosing it from different centers in the region, to have a wide choice that is always updated real-time.
@@ -29,7 +29,7 @@ The adoption procedure starts online through our contact form and ends after a v
 '+', 'Find your pet in advance. Choose between three different provinces', 
 '+', 'Book a visit online. Book a visit to the pet before adoption', 
 '+', 'Recive your pet at home. We can bring you the pet directly at home',
-'We help dogs and cats to find a new house in which they can receive love and respect from their new family.');
+'We help dogs and cats to find a new house in which they can receive love and respect from their new family.', '../img/S_A1.jpg', 'Find your pet in advance. Choose between three different provinces', '../img/S_R1.jpg', 'Book a visit online. Book a visit to the pet before adoption', '../img/S_A3.jpg', 'Recive your pet at home. We can bring you the pet directly at home');
 
 
 /*PROBLEMA COOOOOONNN  ' */
@@ -40,4 +40,4 @@ If the problem is of a more serious nature, however, you can take advantage of d
 '+', 'Free medical checkup. Speak with our experts about your pet'' s health', 
 '+', 'Specialised visits. We can find the perfect therapy for you pet', 
 '+', 'Partner clinics. In our partner clinics you can have discounts',
-'We help fight the abandonment of dogs and cats, sensibilizing people about the topic and rescuing pets from the street.');
+'We help fight the abandonment of dogs and cats, sensibilizing people about the topic and rescuing pets from the street.', '../img/S_P1.jpg', 'Free medical checkup. Speak with our experts about your pet'' s health', '../img/S_P2.jpg', 'Specialised visits. We can find the perfect therapy for you pet', '../img/S_P3.jpg', 'Partner clinics. In our partner clinics you can have discounts');

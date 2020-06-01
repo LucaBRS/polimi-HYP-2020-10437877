@@ -1,25 +1,486 @@
-<body>
-    <h1>INDEX</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-    
-    <ul>Event</ul>
-    <a href="./static/event.html">Event page</a>
-    <ul id = 'event'></ul>
-    <ul>member</ul>
-    <a href="./static/member.html">member</a>
-    <ul id = 'member'></ul>
-    <ul>kennel</ul>
-    <a href="./static/kennel.html">kennel</a>
-    <ul id = 'kennel'></ul>
-    <ul>pet</ul>
-    <a href="./static/pet.html">pet</a>
-    <ul id = 'pet'></ul>
-    <ul>service</ul>
-    <a href="./static/service.html">service</a>
-    <ul id = 'service'></ul>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pesthood</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+    <script src="js/parallax.js"></script>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="js/scripts.js"></script>
+    <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+
+</head>
+
+
+<body class="body">
+
+    <nav class="navbar  home navbar-expand-lg navbar-light">
+        <a class="navbar-brand  mr-5  logo" href="index.html">PetsHood</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item  mr-5 active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item  mr-5 dropdown ">
+                    <a class="nav-link dropdown-toggle " id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About Us
+                     
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="./static/association.html">Association</a>
+                        <a class="dropdown-item" href="./static/member.html">People</a>
+                        <a class="dropdown-item" href="./static/contactus.html">Contact Us</a>
+                    </div>
+                </li>
+                <li class="nav-item mr-5 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Rescue</a>
+                        <a class="dropdown-item" href="#">Adoption</a>
+                        <a class="dropdown-item" href="#">Post-adoption</a>
+                    </div>
+                </li>
+                <li class="nav-item  mr-5 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Pets
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Dogs</a>
+                        <a class="dropdown-item" href="#">Cats</a>
+                    </div>
+                </li>
+                <li class="nav-item mr-5 ">
+                    <a class="nav-link" href="./static/event.html">Events</a>
+                </li>
+                <li class="nav-item mr-5 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Kennels
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Modena</a>
+                        <a class="dropdown-item" href="#">Reggio Emilia</a>
+                        <a class="dropdown-item" href="#">Parma</a>
+
+                    </div>
+                </li>
+            </ul>
+
+            <a class="btn don btn-outline-success my-2 my-sm-0" href="./static/donation.html" type="submit">Donation</a>
+    </nav>
+
+
+
+
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/HOMEPAGE.jpg" alt="Girl in a jacket"></div>
+
+
+    <!--H1-->
+    <h3 class="display-3">Rescue. Adopt. Care.</h3>
+
+
+    <h2 class="h2">Find your perfect pet</h2>
+
+
+
+
+
+    <!--Carousel-->
+
+
+    <!--/.Carousel Wrapper-->
+
+
+    <!--Carousel Wrapper-->
+    <div id="multi-item-example" class="carousel col-md-12  slide carousel-multi-item" data-ride="carousel">
+
+        <!--Controls-->
+        <div class="controls-top text-center">
+            <a class="btn-floating " href="#multi-item-example" data-slide="prev"><i class="fa  pr-5 mr-5 fa-2x   fa-long-arrow-left"></i></a>
+            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa  ml-5 pl-5 fa-2x fa-long-arrow-right"></i></a>
+        </div>
+        <!--/.Controls-->
+
+        <!--Indicators-->
+        <ol class="carousel-indicators pt-xl-5 ">
+            <i data-target="#multi-item-example " data-slide-to="0" class="fa fa-circle active mr-3"></i>
+            <i data-target="#multi-item-example" data-slide-to="1" class="fa fa-circle mr-3"></i>
+            <i data-target="#multi-item-example" data-slide-to="2" class="fa fa-circle mr-3"></i>
+        </ol>
+        <!--/.Indicators-->
+
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+            <!--First slide-->
+
+            <div class="carousel-item  active">
+
+                <div class="row">
+
+
+
+                    <div class="col-md-3 mb-5 clearfix  ">
+                        <div class="card mb-2 shadow">
+                            <img class="card-img-top" src="img/page1-Biscotto.jpg" alt="Card image cap">
+                            <div class="card-body text-center ">
+                                <h4 class="card-title">Biscotto</h4>
+                                <p class="card-text">3 years old, M</p>
+                                <p class="card-text2">Poodle</p>
+                                <button class="btn  ">Discover</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-5 clearfix ">
+                        <div class="card mb-2 shadow">
+                            <img class="card-img-top" src="img/page2-Cheope.jpg" alt="Card image cap">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Cheope</h4>
+                                <p class="card-text">2 years old, F</p>
+                                <p class="card-text2">Sheperd</p>
+                                <button class="btn ">Discover</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-3 mb-5  clearfix ">
+                        <div class="card mb-2 shadow">
+                            <img class="card-img-top" src="img/page2-Brontolo.jpg" alt="Card image cap">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Brontolo</h4>
+                                <p class="card-text">2 years old, M</p>
+                                <p class="card-text2">Carlino</p>
+                                <button class="btn ">Discover</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3   mb-5 clearfix ">
+                        <div class="card mb-2 shadow">
+                            <img class="card-img-top" src="img/page2-Brontolo.jpg" alt="Card image cap">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Brontolo</h4>
+                                <p class="card-text">2 years old, M</p>
+                                <p class="card-text2">Carlino</p>
+                                <button class="btn ">Discover</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.First slide-->
+
+            <!--Second slide-->
+            <div class="carousel-item">
+
+                <div class="row">
+                    <div class="col-md-3 mb-5 clearfix ">
+                        <div class="card mb-2 shadow">
+                            <img class="card-img-top" src="img/page2-Stella.jpg" alt="Card image cap">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Stella</h4>
+                                <p class="card-text">10 years old, F</p>
+                                <p class="card-text2">Beagle</p>
+                                <button class="btn ">Discover</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-5 clearfix ">
+                        <div class="card mb-2 shadow">
+                            <img class="card-img-top" src="img/TEO.jpg" alt="Card image cap">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Teo</h4>
+                                <p class="card-text">2 years old, M</p>
+                                <p class="card-text2">European</p>
+                                <button class="btn ">Discover</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-5 clearfix ">
+                        <div class="card mb-2 shadow">
+                            <img class="card-img-top" src="img/page2-Brontolo.jpg" alt="Card image cap">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Brontolo</h4>
+                                <p class="card-text">2 years old, M</p>
+                                <p class="card-text2">Carlino</p>
+                                <button class="btn ">Discover</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3 mb-5 clearfix ">
+                        <div class="card mb-2 shadow">
+                            <img class="card-img-top" src="img/page1-Leo.jpg" alt="Card image cap">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Ketty</h4>
+                                <p class="card-text">4 years old, M</p>
+                                <p class="card-text2">Crossbreed</p>
+                                <button class="btn ">Discover</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Second slide-->
+
+            <!--Third slide-->
+            <div class="carousel-item">
+
+                <div class="row">
+                    <div class="col-md-3 mb-5 clearfix ">
+                        <div class="card mb-2 shadow">
+                            <img class="card-img-top" src="img/page2-Glitter.jpg" alt="Card image cap">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Glitter</h4>
+                                <p class="card-text">2 years old, M</p>
+                                <p class="card-text2">Crossbreed</p>
+                                <button class="btn ">Discover</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3 mb-5 clearfix ">
+                        <div class="card mb-2 shadow">
+                            <img class="card-img-top" src="img/MERLINO.jpg" alt="Card image cap">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Merlino</h4>
+                                <p class="card-text">1 years old, M</p>
+                                <p class="card-text">Persian</p>
+                                <button class="btn ">Discover</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3 mb-5 clearfix">
+                        <div class="card mb-2 shadow">
+                            <img class="card-img-top" src="img/page2-Brontolo.jpg" alt="Card image cap">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Brontolo</h4>
+                                <p class="card-text">2 years old, M</p>
+                                <p class="card-text">Carlino</p>
+                                <button class="btn  ">Discover</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3 mb-5 clearfix ">
+                        <div class="card mb-2 shadow">
+                            <img class="card-img-top" src="img/ZAMPA.jpg" alt="Card image cap">
+                            <div class="card-body text-center">
+                                <h4 class="card-title">Zampa</h4>
+                                <p class="card-text">3 years old, F</p>
+                                <p class="card-text2">Crossbreed</p>
+                                <button href=# class="btn ">Discover</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Third slide-->
+
+        </div>
+        <!--/.Slides-->
+
+    </div>
+    <!--/.Carousel Wrapper-->
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Upcoming events-->
+    <h3 class="display-3 ">Interesting events</h3>
+
+    <div class=" card-deck pr-5 pl-5">
+        <div class="card container-md cc  shadow p-3 mb-5 bg-white rounded">
+            <img width="100%" src="img/EVENT1.jpg" alt="Mahcypikchu">
+            <div class="card-body ">
+                <h5 class="card-title">The loyalty ofaa dogs</h5>
+                <p class="card-text"><i>Exhibition</i></p>
+                <a class="btn btn-primary evebutton" href="#" role="button">Discover</a>
+
+            </div>
+        </div>
+
+        <div class="card shadow p-3 mb-5 bg-white rounded">
+            <img width="100%" src="img/EVENT1.jpg" alt="Mahcypikchu">
+            <div class="card-body ">
+                <h5 class="card-title">The loyalty of dogs</h5>
+                <p class="card-text"><i>Exhibition</i></p>
+                <a class="btn btn-primary evebutton" href="#" role="button">Discover</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card-deck pr-5 pl-5 ">
+
+        <div class="card shadow p-3 mb-5 bg-white rounded ">
+            <img width="100%" src="img/EVENTO22.jpg" alt="Mahcypikchu">
+            <div class="card-body">
+                <h5 class="card-title">I am not a pet</h5>
+                <p class="card-text"><i>Show</i></p>
+                <a class="btn btn-primary" href="#" role="button">Discover</a>
+
+            </div>
+        </div>
+
+        <div class="card shadow p-3 mb-5 bg-white rounded">
+            <img width="100%" src="img/EVENT2.jpg" alt="Mahcypikchu">
+            <div class="card-body">
+                <h5 class="card-title">Se mi lasci non vale</h5>
+                <p class="card-text"> <i>Talk</i></p>
+                <a class="btn btn-primary evebutton" href="#" role="button">Discover</a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 pl-5 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="navbar text-light logo ">Petshood</h5>
+                    <p class="text-light"><b>Petshood@gmail.com </b></p>
+                    <p class="text-light">+39 342 561 6782</p>
+
+
+                </div>
+
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mb-md-0 mb-3 pt-4">
+
+                    <!-- Links -->
+                    <p class="text-light"><b>Support Us </b></p>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Become volunteer</a>
+                        </li>
+                        <li>
+                            <a href="#!">Donation</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 mb-md-0 mb-3 pt-4">
+
+                    <!-- Links -->
+                    <p class="text-light"><b>Information</b></p>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Terms and policy</a>
+
+                        </li>
+                        <li>
+                            <a href="#!">Contact us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa mt-2 mr-3 fa-lg fa-facebook"></a>
+                            <a href="#" class="fa  mt-2 mr-3 fa-lg fa-instagram"></a>
+                            <a href="#" class="fa mt-2 mr-3 fa-lg fa-google"></a>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+                <div class="col-md-2 mb-md-0 mb-3 pt-4 ">
+                    <p class="text-light"><b>Social networks </b></p>
+
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="fa soc  mt-2 mr-3 fa-lg fa-facebook "></a>
+                            <a href="#" class="fa  soc  mt-2 mr-3 fa-lg fa-instagram"></a>
+                            <a href="#" class="fa soc  mt-2 mr-3 fa-lg fa-google"></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> ThreeMusketeersCompany.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
 </body>
 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script> 
-
-<script src="/Assets/indexjq.js"></script>
+</html>

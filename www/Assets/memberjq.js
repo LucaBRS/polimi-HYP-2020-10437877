@@ -29,8 +29,5 @@ function makemember(data) {
     
 
     $('#id').append('<p>' + member[2] + '</p>')
-    console.log(data);
-    for (let member of data) {
-        $('#member').append('<a href="./id_member.html?id_member=' + member.id_m + '">'+ member.id_m + ' ' + member.first_name +' '+ member.last_name+'</a>')
-    }
+    
 }

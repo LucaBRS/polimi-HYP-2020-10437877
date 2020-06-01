@@ -6,7 +6,7 @@ CREATE TABLE kennel (
     kennel_address VARCHAR(50),
     kennel_opening VARCHAR(100),
     reference_place VARCHAR(200),
-    id_responsable VARCHAR(10) REFERENCES member(id)
+    id_responsable VARCHAR(10) REFERENCES member(id_m)
 );
 
 INSERT INTO kennel (id_k, kennel_photo, kennel_name, kennel_history, kennel_address, kennel_opening, reference_place, id_responsable) VALUES ('K_M', 'kennel_photok1', 'Kennel of Modena', 

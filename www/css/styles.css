@@ -1,0 +1,503 @@
+.navbar.home {
+    background-color: rgb(255, 255, 255);
+}
+
+.btn.don {
+    background-color: #F9AD5D;
+    border: 0;
+    color: white;
+}
+
+.btn.don:hover {
+    background-color: rgb(241, 193, 141);
+    color: black;
+}
+
+.nav-item.active {
+    border-bottom: 3px solid #F9AD5D;
+}
+
+.nav-item:hover {
+    border-bottom: 3px solid #F9AD5D;
+}
+
+
+/*donation*/
+
+.navbar-brand.logo {
+    font-family: 'Meddon', cursive;
+    color: #F9AD5D;
+}
+
+.navbar.navbar-nav:hover {
+    background-color: rgb(2, 1, 1);
+    width: 20%
+}
+
+.nav-item.nav-link.active {
+    background-color: #F9AD5D;
+}
+
+.nav-item.nav-link.active:hover {
+    background-color: rgb(250, 205, 158);
+}
+
+.nav-item.dropdown-menu.dropdown-item {
+    background-color: #F9AD5D;
+}
+
+.nav-link.act {
+    background-color: #F9AD5D;
+}
+
+
+/*Background image*/
+
+body,
+html {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.display-3 {
+    text-align: center;
+    font-weight: 600;
+    color: #727171;
+    padding: 50px;
+}
+
+.h2 {
+    text-align: center;
+    padding-top: 90px;
+    color: #727171;
+}
+
+.body {
+    background-color: rgb(255, 245, 232);
+}
+
+.btn.btn-primary {
+    background-color: #F9AD5D;
+    border-color: rgb(252, 255, 253);
+}
+
+
+/*button event*/
+
+.eve {
+    padding-top: 100px;
+}
+
+
+/*footer*/
+
+.page-footer {
+    background-color: #F9AD5D;
+}
+
+.col-md-3.list-unstyled {
+    background-color: rgb(255, 255, 255);
+}
+
+.page-footer.list-unstyled {
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+.display-3.h3 {
+    padding-top: 10px;
+    text-align: left;
+}
+
+.fa.soc {
+    color: white;
+}
+
+
+/*breadcrumb*/
+
+.breadcrumb {
+    padding-top: 40px;
+    background-color: #DB9E67;
+    margin: 0;
+}
+
+.breadcrumb a {
+    color: white;
+}
+
+.breadcrumb .active {
+    color: white;
+}
+
+
+/*people light container image*/
+
+.bg-light {
+    height: 600px;
+}
+
+.image {
+    align-items: center;
+    padding-top: 30px;
+    height: 300px;
+    width: 70%;
+}
+
+.btn {
+    color: black;
+    border-color: black;
+    border-radius: 40px;
+    width: 200px;
+}
+
+
+/*cards*/
+
+.card-text {
+    text-align: center;
+    color: #727171;
+}
+
+.card-title {
+    text-align: center;
+}
+
+
+/* Container needed to position the button. Adjust the width as needed */
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+
+/* Make the image responsive */
+
+.container img {
+    height: 300px;
+    width: 300px;
+    padding-top: 30px;
+}
+
+
+/* Style the button and place it in the middle of the container/image */
+
+.container .btn {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(209, 181, 181, 0.5);
+    color: rgb(255, 254, 254);
+    font-size: 16px;
+    padding: 12px 24px;
+    border-color: rgb(250, 247, 247);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container .btn:hover {
+    background-color: #DB9E67;
+}
+
+.container .cim {
+    margin: 20px;
+    padding-right: 20px;
+}
+
+.bg-light.meme {
+    height: 100%;
+}
+
+.carousel-item button:hover {
+    background-color: #DB9E67
+}
+
+.carousel-indicators i {
+    color: #F9AE60
+}
+
+.carousel-indicators i:hover {
+    color: rgb(255, 255, 255)
+}
+
+.controls-top i {
+    color: silver
+}
+
+.controls-top i:hover {
+    color: #DB9E67;
+}
+
+
+/*tabs in associ*/
+
+* {
+    box-sizing: border-box
+}
+
+
+/* Style the tab */
+
+.tab {
+    float: left;
+    width: 40%;
+    height: 400px;
+    background-color: #FCFAF6;
+}
+
+
+/* Style the buttons that are used to open the tab content */
+
+.tab button {
+    display: block;
+    background-color: #C5D5DC;
+    color: white;
+    margin-left: 40%;
+    padding: 22px 56px;
+    width: 40%;
+    cursor: pointer;
+    transition: 0.9s;
+    border: 0;
+}
+
+.tab
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: rgb(14, 6, 6);
+}
+
+
+/* Create an active/current "tab button" class */
+
+.tab button.active {
+    background-color: rgb(66, 164, 209);
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    background-color: #FCFAF6;
+    float: left;
+    width: 60%;
+    height: 400px;
+    ;
+}
+
+.tab .lond {
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+}
+
+.tab .tok {
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+
+/*body bg asso*/
+
+.body.bgr {
+    background-color: rgb(255, 255, 255);
+}
+
+.list-unstyled li a {
+    color: white
+}
+
+.footer-copyright a {
+    color: white
+}
+
+
+/*********************************************************association****************************/
+
+
+/*footer in assoc*/
+
+
+/*counter donation*/
+
+.assoh {
+    padding-left: 15%;
+}
+
+.assohe {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: left;
+    padding-bottom: 3%;
+}
+
+.tabe:hover {
+    border-bottom: 1px solid #DB9E67;
+}
+
+.assbut {
+    margin-left: 15%;
+}
+
+.bg-ass {
+    border-radius: 20px;
+    background-color: #C5D5DC;
+    color: white;
+}
+
+.visible-mobile {
+    display: none !important;
+}
+
+@media (max-width: 489px) {
+    .visible-mobile {
+        display: inline !important;
+    }
+    .hidden-mobile {
+        display: none !important;
+    }
+}
+
+
+/*card*/
+
+.container.cd {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+
+/***************Donation*******/
+
+.doncard {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.visible-mobile1 {
+    display: none !important;
+}
+
+@media (max-width: 489px) {
+    .visible-mobile1 {
+        display: inline !important;
+    }
+    .hidden-mobile1 {
+        display: none !important;
+    }
+}
+
+
+/***********contact us*******************/
+
+.conbg {
+    /* The image used */
+    /* Full height */
+    height: 30%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bform {
+    background-color: #F9AD5D;
+    border: 0;
+    color: white
+}
+
+.bform:hover {
+    background-color: rgb(247, 197, 144);
+}
+
+.forma {
+    border-radius: 30px;
+}
+
+.fbor {
+    border: 1px solid #FAAE5F;
+    border-radius: 10px;
+}
+
+.parallax-window {
+    min-height: 100px;
+    background: transparent;
+    height: 80%;
+}
+
+.parallax-window.bottom {
+    height: 40%;
+}
+
+#container {
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.cont {
+    padding-right: 43%;
+}
+
+.dropdown-item.active {
+    border-bottom: 1px solid #F9AD5D;
+    background-color: unset;
+    color: black;
+}
+
+
+/********************Volunteer?********************/
+
+.volune {
+    margin-left: 14%;
+    padding-right: 20%;
+}
+
+
+/**********************Member*******************************/
+
+.membe {
+    padding-top: 12%;
+}
+
+.memcol {
+    color: #F9AD5D;
+}
+
+.mert {
+    padding-top: 50%;
+}
+
+.baton {
+    background-color: #F9AE60;
+    color: white
+}
+
+.baton:hover {
+    background-color: rgb(240, 182, 121);
+    color: white;
+}
+
+.piz:hover {
+    background-color: #F9AE60;
+    border-radius: 30px;
+}
+
+.tert {
+    padding-top: 50%;
+}
+
+.bor {
+    border: 1px solid black;
+    border-radius: 30px;
+    color: black;
+}
+
+.bor:hover {
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    background-color: #F9AE60;
+}
+
+
+/* change all .btn to .btn-sm size on xs */

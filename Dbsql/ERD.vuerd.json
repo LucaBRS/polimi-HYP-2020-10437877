@@ -2,8 +2,8 @@
   "canvas": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": 123,
-    "scrollLeft": 7,
+    "scrollTop": 144,
+    "scrollLeft": 0,
     "show": {
       "tableComment": false,
       "columnComment": false,
@@ -20,7 +20,17 @@
     "canvasType": "ERD",
     "language": "GraphQL",
     "tableCase": "pascalCase",
-    "columnCase": "camelCase"
+    "columnCase": "camelCase",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnDefault",
+        "columnComment"
+      ]
+    }
   },
   "table": {
     "tables": [
@@ -554,7 +564,7 @@
           "active": false,
           "left": 217,
           "top": 622,
-          "zIndex": 506,
+          "zIndex": 508,
           "widthName": 60,
           "widthComment": 60
         },

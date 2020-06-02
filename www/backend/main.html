@@ -41,20 +41,21 @@ We followed as much as possible the REST paradigm:
     and we tried to remove any dependencies.
 - Layered System: the system is layered, the Postgres server is situated in another place compared to the server. 
     Session information is stored on the server. 
-- Code on demand: this part was tricky but not so relevant for us because we sent just resources in JSON format.  
+- Code on demand: this part was not so relevant for us because we sent just resources in JSON format.  
 - Stateless: we achieved this point. We have just GET to the server and we did not need to manage any user login.   
 - Uniform Interface: it was one of the most important parts, therefore we try to follow it as much as possible.  
     Our interface is resource-based, we have resources with relative URIs, we have resource representation with naming 
     convention and the format for the GET attribute are all in JSON, the messages are self-descriptive.
 
 #### OpenAPI Resource models
-Describe here synthetically, which models you have introduced for
-resources.
+We kept everything simple, in order to have a more understandable model: 
+most part of the resources are describe with value string. 
+Photo and dates are saved trough strings. 
+All the table in the database store an unique identifier.
 
 ### Data model
 Here is the ERD diagram:
 <img src="./ERD.jpg" width=600 height=auto>
-It is possible to observe a better version in the project repository (projectName/Dbsql/ERD.vuerd.json)
 
 ## Implementation
 

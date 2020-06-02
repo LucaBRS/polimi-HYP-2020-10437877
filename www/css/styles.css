@@ -80,7 +80,7 @@ html {
     background-color: #F9AD5D;
     border-color: rgb(252, 255, 253);
 	position: relative;
-	left: 35%;
+	left: 34%;
 	
 }
 
@@ -112,7 +112,7 @@ html {
 }
 
 .fa.soc {
-    color: white;
+   color: white;
 }
 
 
@@ -137,6 +137,7 @@ html {
 
 .bg-light {
     height: 600px;
+
 }
 
 .image {
@@ -333,6 +334,7 @@ html {
     padding-right: 15%;
     text-align: left;
     padding-bottom: 3%;
+	padding-top: 2%;
 }
 
 .tabe:hover {
@@ -345,7 +347,7 @@ html {
 
 .bg-ass {
     border-radius: 20px;
-    background-color: #C5D5DC;
+    background-color: #98A7DD;
     color: white;
 }
 

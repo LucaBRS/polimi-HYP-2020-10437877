@@ -79,6 +79,9 @@ html {
 .btn.btn-primary {
     background-color: #F9AD5D;
     border-color: rgb(252, 255, 253);
+	position: relative;
+	left: 35%;
+	
 }
 
 
@@ -423,7 +426,7 @@ html {
 .parallax-window {
     min-height: 100px;
     background: transparent;
-    height: 80%;
+    height: 65%;
 }
 
 .parallax-window.bottom {
@@ -498,6 +501,7 @@ html {
     color: rgb(255, 255, 255);
     background-color: #F9AE60;
 }
+
 
 
 /* change all .btn to .btn-sm size on xs */

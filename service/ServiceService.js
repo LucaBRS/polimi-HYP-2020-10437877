@@ -29,7 +29,7 @@ exports.serviceDb = function(s){
  * returns Service
  **/
 exports.serviceGET = function(limit,offset) {
-  return sqlDb('service');
+  return sqlDb('service').limit(limit).offset(offset);
 }
 
 

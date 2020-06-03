@@ -14,7 +14,7 @@ exports.eventDb = function(s){
  **/
 exports.eventGET = function(limit,offset) {
   
- return sqlDb("event");
+ return sqlDb("event").limit(limit).offset(offset);
 }
 
 

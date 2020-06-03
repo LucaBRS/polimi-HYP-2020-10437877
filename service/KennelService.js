@@ -12,7 +12,7 @@ exports.kennelDb = function(s){
  **/
 exports.kennelGET = function(limit,offset)  {
   
- return sqlDb("kennel");
+ return sqlDb("kennel").limit(limit).offset(offset);
 }
 
 

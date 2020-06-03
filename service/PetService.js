@@ -14,7 +14,7 @@ exports.petDb = function(s){
  * returns Pet
  **/
 exports.petGET = function(limit,offset) {
-  return  sqlDb("pet").offset(offset);  
+  return  sqlDb("pet").offset(offset).limit(limit);  
 }
 
 

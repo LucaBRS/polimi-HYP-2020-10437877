@@ -9,7 +9,7 @@ const knex = require("knex");
  let sqlDb = knex({
  debug: true,
  client: "pg",
- connection:   process.env.DATABASE_URL,
+ connection:    'postgresql://postgres:lol1@localhost:5432/projectdb',
  ssl: true
  });
 

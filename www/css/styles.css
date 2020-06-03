@@ -6,6 +6,9 @@
     background-color: #F9AD5D;
     border: 0;
     color: white;
+	width: 15%;
+	max-width: 15%;
+
 }
 
 .btn.don:hover {
@@ -26,7 +29,7 @@
 
 .navbar-brand.logo {
     font-family: 'Meddon', cursive;
-    color: #F9AD5D;
+    color: #F79228;
 }
 
 .navbar.navbar-nav:hover {
@@ -79,8 +82,8 @@ html {
 .btn.btn-primary {
     background-color: #F9AD5D;
     border-color: rgb(252, 255, 253);
-	position: relative;
-	left: 34%;
+	width: 40%;
+	max-width: 40%;
 	
 }
 
@@ -99,11 +102,11 @@ html {
 }
 
 .col-md-3.list-unstyled {
-    background-color: rgb(255, 255, 255);
+    background-color: black;
 }
 
 .page-footer.list-unstyled {
-    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-color: rgba(20,19,19,1.00);
 }
 
 .display-3.h3 {
@@ -112,7 +115,7 @@ html {
 }
 
 .fa.soc {
-   color: white;
+   color: black;
 }
 
 
@@ -151,7 +154,8 @@ html {
     color: black;
     border-color: black;
     border-radius: 40px;
-    width: 200px;
+    width: 70%;
+	max-width: 70%;
 }
 
 

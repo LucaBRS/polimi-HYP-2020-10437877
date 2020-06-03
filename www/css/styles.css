@@ -5,7 +5,7 @@
 .btn.don {
     background-color: #F9AD5D;
     border: 0;
-    color: white;
+    color: black;
 	width: 15%;
 	max-width: 15%;
 
@@ -29,7 +29,7 @@
 
 .navbar-brand.logo {
     font-family: 'Meddon', cursive;
-    color: #F79228;
+    color: black;
 }
 
 .navbar.navbar-nav:hover {
@@ -128,11 +128,11 @@ html {
 }
 
 .breadcrumb a {
-    color: white;
+    color: black;
 }
 
 .breadcrumb .active {
-    color: white;
+    color: black;
 }
 
 
@@ -413,7 +413,9 @@ html {
 .bform {
     background-color: #F9AD5D;
     border: 0;
-    color: white
+    color: black;
+	width: 40%;
+
 }
 
 .bform:hover {
@@ -425,7 +427,7 @@ html {
 }
 
 .fbor {
-    border: 1px solid #FAAE5F;
+    border: 1px solid #F9AD5D;
     border-radius: 10px;
 }
 

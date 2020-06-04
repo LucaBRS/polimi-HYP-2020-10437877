@@ -11,10 +11,18 @@ $(document).ready(function(){
 
 function makemember(data){
    
+    we=data[1];
+    me=data[0];
+   
+
+    $('#ut').append('<img alt="Picof mem" height=100% width=100%   src="'+we.event_photo+'"></img>'+'<p>'+we.event_name+'</p><a class="btn-sm  stretched-link text-dark    " href="./id_event.html?id='+we.id_event+'">Show more</a>');
+    $('#ut2').append('<img alt="Picof mem" height=100% width=100%   src="'+me.event_photo+'"></img>'+'<p>'+we.event_name+'</p><a class="btn-sm  stretched-link text-dark    " href="./id_event.html?id='+we.id_event+'">Show more</a>');
 
     console.log(data);
     member=data[0];
         $('#name').append(member.first_name)
+        $('#name3').append('<p>'+member.first_name+'`s</p>')
+
         $('#posit').append(member.member_position+'  '+'of'+'  '+member.member_address)
 
 

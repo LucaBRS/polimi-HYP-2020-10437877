@@ -14,18 +14,20 @@ function makeservice(data) {
     console.log(data);
     serv = data;
     $('#sername').append(serv[3].service_name)
-    $('#serp').append('<img class="jek pt-5 pb-5" width=90% height=100% src="' + serv[3].service_photo + '">')
+    $('#serp').append('<img alt="picture of dog" class="jek pt-5  pb-5" width=90% height=100% src="' + serv[3].service_photo + '">')
     $('#serdes').append(serv[3].service_description)
     $('#s1').append(serv[3].info_1)
     $('#s2').append(serv[3].info_2)
     $('#s3').append(serv[3].info_3)
 
+    $('#jopa').append(serv[3].service_name)
 
 
 
 
 
     for (let service of data) {
+        
 
         $('#id_service').append('<li>' + service.id + ' ' + service.service_name + '</li> ' +
             '<h1>description: ' + service.service_description + '</h1>' +

@@ -23,15 +23,15 @@ function makeEvent(data){
                 $('#evtext').append('<p class="display-5 pl-5">'+event.event_description+'</p>')
 
                 $('#evdate').append('<i class="fa fa-calendar " style="font-size:24px">'+event.event_day+'/'+event.event_month+'/'+event.event_year+' </i>')
-                $('#evtime').append('<i class="fa fa-clock-o memcol" style="font-size:24px">'+event.event_time+'/ </i>')
+                $('#evtime').append('<i class="fa fa-clock-o " style="font-size:24px">'+event.event_time+'/ </i>')
                 $('#evadd').append('<i class="fa fa-map-marker " style="font-size:24px">'+event.event_address+'/ </i>')
 
-                $('#evres').append('<h6 >Responsable: <a href="./id_member.html?id_member='+event.id_member+'">'+event.first_name+'  '+event.last_name+'</a></h6>')
+                $('#evres').append('<a class="btn-sm  text-dark " href="./id_member.html?id_member='+event.id_member+'">'+event.first_name+'  '+event.last_name+'</a>')
 
                 $('#servname').append('<h1>'+event.service_name+'</h1>')
                 $('#servinf').append('<p>'+event.other_info+'</p>')
-                $('#servph').append('<img width=100% height=100% alt="img" src="'+event.service_photo+'"</img>')
-                $('#servlink').append('<a class="btn bor" href="../static/id_service.html?id='+event.id_service + '">' +'Click here to find more about the service presented'+'</a>')
+                $('#servph').append('<img class="hidden-mobile" width=100% height=100% alt="img" src="'+event.service_photo+'"</img>')
+                $('#servlink').append('<a class="btn bor" href="../static/id_service.html?id='+event.id_service + '">' +'About rescue'+'</a>')
 
 
 

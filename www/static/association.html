@@ -24,73 +24,65 @@
 <body class="body ">
 
     <nav class="navbar  home navbar-expand-lg navbar-light">
-        <a class="navbar-brand  mr-5  logo" href="../index.html">PetsHood</a>
+        <a class="navbar-brand  mr-5  logo" href="/index.html">PetsHood</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item  mr-5 active">
-                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item  mr-5 ">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item  mr-5 dropdown ">
-                    <a class="nav-link dropdown-toggle "id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item  mr-5 dropdown active ">
+                    <a class="nav-link dropdown-toggle " id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       About Us
                      
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="./association.html">Association</a>
-                        <a class="dropdown-item" href="./member.html">People</a>
-                        <a class="dropdown-item" href="./contactus.html">Contact Us</a>
-                    </div>
-                </li>
-                <li class="nav-item mr-5 dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Services
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="./static/id_service.html?id_service=S_R">Rescue</a>
-                        <a class="dropdown-item" href="./static//id_service.html?id_service=S_A">Adoption</a>
-                        <a class="dropdown-item" href="./static//id_service.html?id_service=S_P">Post-adoption</a>
-                    </div>
-                </li>
-                <li class="nav-item mr-5 dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Pets
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" >Dogs</a>
-                        <a class="dropdown-item" >Cats</a>
+                        <a class="dropdown-item active" href="./association.html">Association</a>
+                        <a class="dropdown-item " href="./member.html">People</a>
+                        <a class="dropdown-item " href="./contactus.html">Contact Us</a>
                     </div>
                 </li>
                 <li class="nav-item mr-5 ">
+                    <a class="nav-link" href="./service.html">Services</a>
+                </li>
+                <li class="nav-item  mr-5 dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="under-construction"> Pets</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item">Dogs</a>
+                        <a class="dropdown-item">Cats</a>
+                    </div>
+                </li>
+                <li class="nav-item mr-5  ">
                     <a class="nav-link" href="./event.html">Events</a>
                 </li>
-                <li class="nav-item mr-5 dropdown">
-                    <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item  dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Kennels
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" >Modena</a>
-                        <a class="dropdown-item" >Reggio Emilia</a>
-                        <a class="dropdown-item" >Parma</a>
+                        <a class="dropdown-item">Modena</a>
+                        <a class="dropdown-item">Reggio Emilia</a>
+                        <a class="dropdown-item">Parma</a>
 
                     </div>
                 </li>
             </ul>
 
-            <a class="btn don btn-outline-success my-2 my-sm-0" href="./donation.html" type="submit">Donation</a>
-        </nav>
-        </div>
+            <a class="btn don btn-outline-success my-2 my-sm-0" href="./static/donation.html" type="submit">Donation</a>
     </nav>
 
 
 
+
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb text-black pt-3 ">
+        <ol class="breadcrumb text-dark pt-3 ">
             <li class="breadcrumb-item "><a href="#" class="text-black">About Us</a></li>
-            <li class="breadcrumb-item text-black active" aria-current="page">Association;</li>
+            <li class="breadcrumb-item text-black active" aria-current="page">Association</li>
         </ol>
     </nav>
 
@@ -100,15 +92,20 @@
 
 
 
-    <!--H1-->
-    <h2 " class="display-3 cont text-dark">Association</h2>
 
-<div class="text-center ">
+
+    <!--H1-->
+    <h3 class="display-4 assoh  pt-3"> Association</h3>
+
+
+
+
+    <div class="text-center ">
         <div class="bg-light meme ">
             <img class="image hidden-mobile" src="../img/ASSOCIATION.jpg" alt="A man running with a lot of dogs">
-            <img class="image visible-mobile" src="../img/all dogs.jpg" alt="The beginning of association">
+            <img height=25% width=100% class="container-fluid pt-5 mb-5  visible-mobile" src="../img/11LEO.jpg" alt="temporal line of association">
 
-            <p class= "assohe">Petshood is an association that deals with the administration and management of three kennels on the territory of Emilia Romagna. Born from the love of the founders for animals, its area of intervention is to combine the pursuit of animal
+            <p class="assohe">Petshood is an association that deals with the administration and management of three kennels on the territory of Emilia Romagna. Born from the love of the founders for animals, its area of intervention is to combine the pursuit of animal
                 welfare and responsible management of their spaces. We want to spread a culture of proper animal care and we propose a model of kennels as a place open to the public, a place of comparison with other animals.</p>
 
 
@@ -132,10 +129,8 @@
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                         <h2>History</h2>History The association was founded in 2002 by a group of animal-lovers members.
-						<br>
-						Over the years it has become of such importance in the territory that it was entrusted with the management of the small kennel of Reggio
-                        Emilia. The association was created and was able to obtain the administration of the kennels of Parma and Modena (2008-2011). Petshood is currently managing a total of 50 animals including
-                        dogs and cats and about twenty volunteers.</div>
+                        <br> Over the years it has become of such importance in the territory that it was entrusted with the management of the small kennel of Reggio Emilia. The association was created and was able to obtain the administration of the
+                        kennels of Parma and Modena (2008-2011). Petshood is currently managing a total of 50 animals including dogs and cats and about twenty volunteers.</div>
                     <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                         <h2>Values</h2>
 
@@ -153,48 +148,48 @@
 
 
     <!--Arrow line with years-->
-    <img class="container-fluid pt-5 mt-5 mb-5 history visible-mobile" src="../img/asso.png" alt="temporal line of association">
+    <img height=25% width=100% class="container-fluid pt-5 mb-5  visible-mobile" src="../img/11LEO.jpg" alt="temporal line of association">
 
-    <img class="container-fluid pt-5 mt-5 mb-5 history hidden-mobile" src="../img/asso.png" alt="history of association">
+    <img class="container-fluid pt-5 mb-5 hidden-mobile" src="../img/asso.png" alt="history of association">
 
 
 
-     <!-- Footer -->
-     <footer class="page-footer font-small blue pt-4">
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4 ">
 
         <!-- Footer Links -->
-        <div class="container-fluid text-center text-md-left">
+        <div class="container-fluid text-center text-md-left ">
 
             <!-- Grid row -->
-            <div class="row">
+            <div class="row ">
 
                 <!-- Grid column -->
-                <div class="col-md-6 pl-5 mt-md-0 mt-3 offset-lg-1 col-lg-4">
+                <div class="col-md-6 pl-5 mt-md-0 mt-3 offset-lg-1 col-lg-4 ">
 
                     <!-- Content -->
-                    <h5 class="navbar-brand text-dark logo">Petshood</h5>
-                    <p class="text-dark"><b>Petshood@gmail.com </b></p>
-                    <p class="text-dark">+39 342 561 6782</p>
+                    <h5 class="navbar-brand mr-5 text-dark logo ">Petshood</h5>
+                    <p><b>Petshood@gmail.com </b></p>
+                    <p>+39 342 561 6782</p>
 
 
                 </div>
 
                 <!-- Grid column -->
 
-                <hr class="clearfix w-100 d-md-none pb-3">
+                <hr class="clearfix w-100 d-md-none pb-3 ">
 
                 <!-- Grid column -->
-                <div class="col-md-2 mb-md-0 mb-3 pt-4">
+                <div class="col-md-2 mb-md-0 mb-3 pt-4 ">
 
                     <!-- Links -->
-                    <p class="text-dark"><b>Support Us </b></p>
+                    <p><b>Support Us </b></p>
 
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled ">
                         <li>
-                            <a class="text-dark" href="./volunteer.html">Become volunteer</a>
+                            <a class="text-dark " href="./static/volunteer.html ">Become volunteer</a>
                         </li>
                         <li>
-                            <a class="text-dark" href="./donation.html">Donation</a>
+                            <a class="text-dark " href="./static//donation.html ">Donation</a>
                         </li>
 
                     </ul>
@@ -203,34 +198,33 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-2 mb-md-0 mb-3 pt-4">
+                <div class="col-md-2 mb-md-0 mb-3 pt-4 ">
 
                     <!-- Links -->
-                    <p class="text-dark"><b>Information</b></p>
+                    <p><b>Information</b></p>
 
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled ">
                         <li>
-                            <a class="text-dark" href="./terms.html">Terms and policy</a>
+                            <a class="text-dark " href="./static/terms.html ">Terms and policy</a>
 
                         </li>
                         <li>
-                            <a class="text-dark" href="./contactus.html">Contact us</a>
+                            <a class="text-dark " href="./static/contactus.html ">Contact us</a>
                         </li>
-
 
                     </ul>
 
 
                 </div>
                 <div class="col-md-2 mb-md-0 mb-3 pt-4 ">
-                    <p class="text-dark"><b>Social networks </b></p>
+                    <p><b>Social networks </b></p>
 
 
-                    <ul class="list-unstyled" >
+                    <ul class="list-unstyled ">
                         <li>
-                            <a  class="fa soc  mt-2 mr-3 fa-lg fa-facebook"></a>
-                            <a  class="fa  soc  mt-2 mr-3 fa-lg fa-instagram"></a>
-                            <a  class="fa soc  mt-2 mr-3 fa-lg fa-google"></a>
+                            <a class="fa soc mt-2 mr-3 fa-lg fa-facebook "></a>
+                            <a class="fa soc mt-2 mr-3 fa-lg fa-instagram "></a>
+                            <a class="fa soc mt-2 mr-3 fa-lg fa-google "></a>
                         </li>
                     </ul>
 
@@ -245,8 +239,8 @@
         <!-- Footer Links -->
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a class="text-dark" href="https://mdbootstrap.com/"> ThreeMusketeersCompany.com</a>
+        <div class="footer-copyright text-center py-3 ">© 2020 Copyright:
+            <a class="text-dark " href="https://mdbootstrap.com/ "> ThreeMusketeersCompany.com</a>
         </div>
         <!-- Copyright -->
 

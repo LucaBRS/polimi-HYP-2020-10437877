@@ -30,4 +30,12 @@ function makemember(data) {
 
     $('#id').append('<p>' + member[2] + '</p>')
     
+    $('#position1').append(member[0].member_position)
+    $('#position2').append(member[1].member_position)
+    $('#position3').append(member[2].member_position)
+    $('#position4').append(member[3].member_position)
+    $('#position5').append(member[4].member_position)
+    $('#position6').append(member[5].member_position)
+
+
 }

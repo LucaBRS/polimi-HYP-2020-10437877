@@ -26,12 +26,15 @@ function makeservice(data) {
 
 
 
-    for (let service of data) {
+  /*  for (let service of data) {
         
 
-        $('#id_service').append('<li>' + service.id + ' ' + service.service_name + '</li> ' +
-            '<h1>description: ' + service.service_description + '</h1>' +
-            '<h1>date: ' + service.info_1 + '/' + service.info_2 + '/' + service.info_3 + '</h1>' +
-            '<h1>responsable: ' + service.other_info + '</h1><img src="' + service.service_photo + '"></img>');
-    }
+        $('element').add('<img width="100%" src="../img/ANNALISA RUGGI.jpg" alt="Mahcypikchu">'+
+        '<div class="card-body ">'+
+           '<h5 class="card-title">Annalisa Ruiggi</h5>'+
+          '  <p class="card-text"><i>Vet of Parmas kennel</i></p>'+
+           ' <a class="btn-sm bor " href="./id_member.html?id_member=P4_anru" role="button">Discover</a>'+
+
+        '</div>');
+    }*/
 }

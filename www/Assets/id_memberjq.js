@@ -10,15 +10,18 @@ $(document).ready(function(){
 
 
 function makemember(data){
-   
-    we=data[1];
+    
     me=data[0];
+    $('#ut2').append('<img alt="Picof mem" height=100% width=100%   src="'+me.event_photo+'"></img>'+'<p>'+me.event_name+'</p><a class="btn-sm  stretched-link text-dark    " href="./id_event.html?id='+me.id_event+'">Show more</a>');
+
+
+    if(data[1]){
+        we=data[1];
+        $('#ut').append('<img alt="Picof mem" height=100% width=100%   src="'+we.event_photo+'"></img>'+'<p>'+we.event_name+'</p><a class="btn-sm  stretched-link text-dark    " href="./id_event.html?id='+we.id_event+'">Show more</a>');   
+    }
    
+    
 
-    $('#ut').append('<img alt="Picof mem" height=100% width=100%   src="'+we.event_photo+'"></img>'+'<p>'+we.event_name+'</p><a class="btn-sm  stretched-link text-dark    " href="./id_event.html?id='+we.id_event+'">Show more</a>');
-    $('#ut2').append('<img alt="Picof mem" height=100% width=100%   src="'+me.event_photo+'"></img>'+'<p>'+we.event_name+'</p><a class="btn-sm  stretched-link text-dark    " href="./id_event.html?id='+we.id_event+'">Show more</a>');
-
-    console.log(data);
     member=data[0];
         $('#name').append(member.first_name)
         $('#name3').append('<p>'+member.first_name+'`s</p>')
@@ -43,15 +46,7 @@ function makemember(data){
 
 
         $('#phot').append('<img alt="Picof mem" width=100% height=100% class="hidden-mobile"  src="'+member.member_photo+'"></img>');
-        $('#id_member').append('<li>start  ' + member.id_member+ ' ' + member.first_name + ' '+ member.last_name+ '</li> '+
-        '<h1>bio: ' +member.member_biography+ '</h1>'+
-        '<h1>info: '+member.email+'/'+member.member_position+'  finish</h1>'+
-        '<h1> kennel'+ member.id_k+'  '+member.kennel_name+ '    '+member.member_service+'</h1>');
+        
     
-        for (let member of data){
-            $('#id_member').append('<li>start  ' + member.id_member+ '</li> '+
-                '<li>' + member.id_event+ ' ' + member.event_name + '  day:'+ member.event_day+ ' Mont'+member.event_month +'</li> '+
-        '<h1>des:: ' +member.event_description+ '</h1>'+
-        '<h1> kennel'+ member.id_k+'  '+member.kennel_name+ '    '+member.member_service+'</h1>');
-        }
+     
 }

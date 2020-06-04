@@ -64,7 +64,8 @@ html {
 
 .display-3 {
     text-align: center;
-    font-weight: 600;
+    font-size: 6vw;
+	font-weight: 600;
     color: #727171;
     padding: 50px;
 }
@@ -325,6 +326,15 @@ html {
 
 
 /*footer in assoc*/
+.history{
+	width: 85%;
+	max-width: 85%;
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+	
+}
 
 
 /*counter donation*/
@@ -351,8 +361,8 @@ html {
 
 .bg-ass {
     border-radius: 20px;
-    background-color: #98A7DD;
-    color: white;
+    background-color: #c4d6dc;
+    color: black;
 }
 
 .visible-mobile {

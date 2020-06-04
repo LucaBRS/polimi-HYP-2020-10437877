@@ -91,6 +91,14 @@ html {
     padding-top: 100px;
 }
 
+.card-event{
+    width: 30rem;
+    height: auto;
+}
+.card-event-l{
+    width: 60rem;
+    height: auto;
+}
 
 /*footer*/
 
@@ -534,3 +542,4 @@ html {
 .wda {
     background-color: #F9AE60;
 }
+

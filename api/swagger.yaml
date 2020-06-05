@@ -6,7 +6,7 @@ info:
   title: "PetsHoods"
   contact:
     email: "petshoods@gmail.com"
-host: "polimi-hyp-2020-team-10437877.herokuapp.com"
+host: " polimi-hyp-2020-team-10437877.herokuapp.com"
 basePath: "/v1"
 tags:
 - name: "member"

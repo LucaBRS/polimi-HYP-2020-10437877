@@ -46,7 +46,7 @@ padding-top: 20px;
   }
 
   .bg-azzurrino{
-      background-color:white;
+      background-color: #e6ecef !important ; 
   }
 
   .lucabtn{
@@ -91,4 +91,8 @@ padding-top: 20px;
     cursor: pointer;
     border-radius: 50px;
   }
+}
+
+.colorblack{
+  color: black !important;
 }

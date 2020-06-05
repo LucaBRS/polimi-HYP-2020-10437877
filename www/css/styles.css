@@ -542,7 +542,15 @@ html {
      text-align: center;
 	 padding: 20px;
 }
+.jekk {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+	
+	
+}
 /* change all .btn to .btn-sm size on xs */
 
 .wda {

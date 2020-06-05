@@ -46,7 +46,7 @@ padding-top: 20px;
   }
 
   .bg-azzurrino{
-      background-color: rgb(225, 255, 255);
+      background-color:white;
   }
 
   .lucabtn{
@@ -86,7 +86,7 @@ padding-top: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 100%;
+    font-size: 12px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 50px;

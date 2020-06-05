@@ -44,7 +44,7 @@ function makemember(data){
         $('#mail').append(member.email)
         $('#address').append(member.member_address)
         $('#nameve').append(member.first_name)
-        $('#service').append('<a href="./id_service.html?id_service='+member.member_service+'">'+ service +'</a>')
+        $('#service').append('<a class="text-dark" href="./id_service.html?id_service='+member.member_service+'">'+ service +'</a>')
 
         for (let mem of data){
         $('#immem').append('<img alt="Picof mem" height=30% width=30%   src="'+mem.event_photo+'"></img>'+'<p>'+mem.id_event+'</p>');

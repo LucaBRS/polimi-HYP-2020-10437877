@@ -20,9 +20,8 @@ function makeEvent(data){
             $('#evna').append(event.event_name)
             $('#type').append(event.event_type)
 
-                $('#imev').append('<img width=100% height=auto class="hidden-mobile" alt="img" src="'+event.event_photo+'"</img>'+
-                '<img height=auto width=100% class=" pt-5   visible-mobile" src="'+event.event_photo+'" alt="a dog ">')
-                $('#evtext').append('<p class="display-5 pl-5">'+event.event_description+'</p>')
+                $('#imev').append('<img width=100% height=auto class="hidden-mobile alt="img" src="'+event.event_photo+'"</img>')
+                $('#evtext').append(event.event_description)
 
                 $('#evdate').append(event.event_day+'/'+event.event_month+'/'+event.event_year)
                 $('#evtime').append(''+event.event_time)

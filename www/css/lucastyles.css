@@ -6,3 +6,12 @@
 .margin-bottom{
     margin-bottom: 20px;
 }
+
+.card-event{
+    width: 30rem;
+    height: auto;
+}
+.card-event-l{
+    width: 60rem;
+    height: auto;
+}

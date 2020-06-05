@@ -372,7 +372,7 @@ html {
 
 .bg-ass {
     border-radius: 20px;
-    background-color: #98A7DD;
+    background-color: #c4d6dc;
     color: white;
 }
 
@@ -397,7 +397,13 @@ html {
     padding-bottom: 10%;
 }
 
-
+.history{
+	max-width: 80%;
+	width: 80%;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 /***************Donation*******/
 
 .doncard {

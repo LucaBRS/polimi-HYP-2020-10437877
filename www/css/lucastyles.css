@@ -44,3 +44,19 @@ padding-top: 20px;
   flex: 0 0 100%;
   max-width: 100%;
   }
+
+  .bg-azzurrino{
+      background-color: rgb(225, 255, 255);
+  }
+
+  .lucabtn{
+      border-radius: 20px;
+      background-color:#F9AD5D;      
+      color: black;
+      border-color:#F9AD5D;
+  }
+
+  .lucabtn:hover{
+      background-color: rgb(235, 192, 112);
+    color:white;
+  }

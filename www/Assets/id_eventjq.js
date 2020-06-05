@@ -32,11 +32,11 @@ function makeEvent(data){
 
                 $('#servinf').append(event.other_info)
                 $('#servph').append('<img class="hidden-mobile" width=100% height=100% alt="img" src="'+event.service_photo+'"</img>'+
-                '<img height=auto width=100% class=" pt-5   visible-mobile" src="'+event.service_photo+'" alt="a dog ">')
-                $('#servlink').append('<a class="btn bor" href="../static/id_service.html?id='+event.id_service + '">' +'About rescue'+'</a>')
+                '<img height=100% width=auto class="   visible-mobile" src="'+event.service_photo+'" alt="a dog ">')
+                $('#servlink').append('<a class="btn-sm lucabtn" href="../static/id_service.html?id_service='+event.id_service + '">' +'About rescue'+'</a>')
                 $('#servname').append(event.service_name)
-                $('#ut').append('<img alt="Picof " height=100% width=100%   src="'+event.service_photo+'"></img>'+'<a class="btn-sm  stretched-link text-dark " href="./id_event.html?id='+event.id_service+'">Show more</a>');   
-
+                $('#ut').append('<img alt="Picof " height=100% width=100%   src="'+event.service_photo+'"></img>');   
+         
 
 
                 

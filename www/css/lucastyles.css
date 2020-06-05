@@ -96,3 +96,7 @@ padding-top: 20px;
 .colorblack{
   color: black !important;
 }
+
+.padleft{
+  margin-left: 100px;
+}

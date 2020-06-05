@@ -122,7 +122,10 @@ html {
 .fa.soc {
     color: black;
 }
-
+.icon{
+  float: left;
+  margin-right: 1em;
+}
 
 /*breadcrumb*/
 
@@ -167,7 +170,7 @@ html {
 
 .card-text {
     text-align: center;
-    color: #727171;
+    color: #5B5B5B;
 }
 
 .card-title {

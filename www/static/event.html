@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Pesthood</title>
+    <title>PetsHood</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/lucastyles.css">
     <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
@@ -86,7 +87,7 @@
     <!--Breadcrumbs-->
     <!--sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss-->
 
-   <div class="parallax-window  h-25 h-50" data-parallax="scroll" data-image-src="../img/home.jpeg"  alt="adoss">
+   <div class="parallax-window  h-25 " data-parallax="scroll" data-image-src="../img/home.jpeg"  alt="adoss">
 
     <h3  class="display-3 cont text-dark">Events</h3>
        
@@ -104,8 +105,27 @@
 
     <div class="container-fluid mt-5 ">
 
-        <div class="row">
-            <div class="col-0 pl-0 pr-0  ">
+        <div class="row ">
+            <div class="col-0 pl-0 pr-0  marginev hidden-mobile1 " >
+                <div class="nav flex-column " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <p>Event my month </p>
+                    <a class="nav-link   piz text-dark" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">All events</a>
+                    <a class="nav-link  piz text-dark" id="v-pills-profile-tab " data-toggle="pill" href="#jan" role="tab" aria-controls="v-pills-profile" aria-selected="false">January</a>
+                    <a class="nav-link  piz text-dark" id="v-pills-messages-tab" data-toggle="pill" href="#feb" role="tab" aria-controls="v-pills-messages" aria-selected="false">Febraury</a>
+                    <a class="nav-link  piz text-dark" id="March" data-toggle="pill" href="#mar" role="tab" aria-controls="mar" aria-selected="false">March</a>
+                    <a class="nav-link   piz text-dark" id="April" data-toggle="pill" href="#apr" role="tab" aria-controls="v-pills-home" aria-selected="true">April</a>
+                    <a class="nav-link  piz text-dark" id="May " data-toggle="pill" href="#may" role="tab" aria-controls="v-pills-profile" aria-selected="false">May</a>
+                    <a class="nav-link  piz text-dark" id="June" data-toggle="pill" href="#jun" role="tab" aria-controls="v-pills-messages" aria-selected="false">June</a>
+                    <a class="nav-link  piz text-dark" id="july" data-toggle="pill" href="#jul" role="tab" aria-controls="v-pills-messages" aria-selected="false">July</a>
+                    <a class="nav-link  piz text-dark" id="August" data-toggle="pill" href="#agu" role="tab" aria-controls="v-pills-messages" aria-selected="false">August</a>
+                    <a class="nav-link   piz text-dark" id="September" data-toggle="pill" href="#sep" role="tab" aria-controls="v-pills-home" aria-selected="true">September</a>
+                    <a class="nav-link  piz text-dark" id="October" data-toggle="pill" href="#oct" role="tab" aria-controls="v-pills-profile" aria-selected="false">October</a>
+                    <a class="nav-link  piz text-dark" id="November" data-toggle="pill" href="#nov" role="tab" aria-controls="v-pills-messages" aria-selected="false">November</a>
+                    <a class="nav-link  piz text-dark" id="December" data-toggle="pill" href="#dec" role="tab" aria-controls="v-pills-messages" aria-selected="false">December</a>
+
+                </div>
+            </div>
+            <div class="col-0 pl-0 pr-0  visible-mobile " >
                 <div class="nav flex-column " id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <p>Event my month </p>
                     <a class="nav-link   piz text-dark" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">All events</a>
@@ -125,10 +145,14 @@
                 </div>
             </div>
 
+
+
+
+
             <div class="col-8 pl-0 pr-0 ">
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                        <div class="display-4 text-center">   All events </div>
+                        <div class="display-4 text-center margin-bottom" >   All events </div>
                         <div class=" card-deck  ">
                             <div id="name" class="card container-md   shadow  p-3 mb-5 bg-white rounded ">
 

@@ -15,3 +15,15 @@
     width: 60rem;
     height: auto;
 }
+
+.positiontext,.positionevphoto{
+    position: relative;
+    width: 100%;
+    -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  }
+
+.paddingtop{
+padding-top: 20px;
+}

@@ -60,3 +60,35 @@ padding-top: 20px;
       background-color: rgb(235, 192, 112);
     color:white;
   }
+
+
+  .lucabutton {
+    background-color:#F9AD5D; 
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+
+  @media (max-width: 1024px){
+  .lucabutton {
+    background-color:#F9AD5D; 
+    border: none;
+ 
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+}

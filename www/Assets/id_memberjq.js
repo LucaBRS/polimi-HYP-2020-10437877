@@ -14,12 +14,12 @@ function makemember(data){
   
 
     me=data[0];
-    $('#ut2').append('<img alt="Picof mem" height=100% width=100%   src="'+me.event_photo+'"></img>'+'<p>'+me.event_name+'</p><a class="btn-sm  stretched-link text-dark    " href="./id_event.html?id='+me.id_event+'">Show more</a>');
+    $('#ut2').append('<img alt="Picof mem" height=100% width=100%   src="'+me.event_photo+'"></img>'+'<p>'+me.event_name+'</p><a class="lucabutton lucabtn  stretched-link text-dark    " href="./id_event.html?id='+me.id_event+'">Show more</a>');
 
 
     if(data[1]){
         we=data[1];
-        $('#ut').append('<img alt="Picof mem" height=100% width=100%   src="'+we.event_photo+'"></img>'+'<p>'+we.event_name+'</p><a class="btn-sm  stretched-link text-dark    " href="./id_event.html?id='+we.id_event+'">Show more</a>');   
+        $('#ut').append('<img alt="Picof mem" height=100% width=100%   src="'+we.event_photo+'"></img>'+'<p>'+we.event_name+'</p><a class="lucabutton lucabtn stretched-link text-dark    " href="./id_event.html?id='+we.id_event+'">Show more</a>');   
     }
    
     
